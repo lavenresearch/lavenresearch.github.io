@@ -82,7 +82,7 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : 
+      short_name : lavenr
     livefyre :
       site_id :
     intensedebate :
@@ -100,7 +100,7 @@ JB :
   analytics :
     provider : google
     google :
-        tracking_id : ''
+        tracking_id : 'UA-47162346-1'
     getclicky :
       site_id :
     mixpanel :
