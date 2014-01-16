@@ -2,12 +2,12 @@
 # just fill the name varibable with the post title which should be the source file name
 import time
 
-name = "PACMan coordinated memory caching for parallel jobs"
+name = "It's Time for Low Latency"
 
 # 0 for adding nothing
 # 1 for adding "note@" before name
 # 2 for adding "conclution" before name
-name_switch = 2
+name_switch = 1
 
 if name_switch == 0:
     source_file = name + ".md"
