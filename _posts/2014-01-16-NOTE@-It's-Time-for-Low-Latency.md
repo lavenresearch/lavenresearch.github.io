@@ -1,8 +1,8 @@
 ---
 layout: post
-category : research
+category : Network
 tagline: ""
-tags : [method]
+tags : [performance]
 ---
 {% include JB/setup %}
 It's Time for Low Latency - HotOS 2011
