@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Hello World!
+title: Hello Worlds!
 tagline: research notes
 ---
 {% include JB/setup %}
 
 ## NOTEs LIST
 
-Only research notes for now. Maybe I will add some essaies someday.
+ANYTHING about researching!!
 
 <ul class="posts">
   {% for post in site.posts %}
