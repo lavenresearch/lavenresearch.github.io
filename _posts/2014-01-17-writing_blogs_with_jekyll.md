@@ -1,8 +1,8 @@
 ---
 layout: post
-category : research
+category : tools
 tagline: ""
-tags : [method]
+tags : [jekyll,blog]
 ---
 {% include JB/setup %}
 When I play with jekyll and github pages, I have encountered some errors which are annoying and cost me a lot of time. The records of those errors are listed below. 
