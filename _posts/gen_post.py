@@ -2,12 +2,12 @@
 # just fill the name varibable with the post title which should be the source file name
 import time
 
-name = "It's Time for Low Latency"
+name = "writing_blogs_with_jekyll"
 
 # 0 for adding nothing
 # 1 for adding "note@" before name
 # 2 for adding "conclution" before name
-name_switch = 1
+name_switch = 0
 
 if name_switch == 0:
     source_file = name + ".md"
