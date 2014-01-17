@@ -15,8 +15,4 @@ ANYTHING about researching!!
   {% endfor %}
 </ul>
 
-## To-Do
-
-Things that I plan to do .
-
 
