@@ -72,7 +72,7 @@ THROUGHPUT
 网卡（NIC）这部分的latency和bandwidth的区别：
 网卡一次最多能够处理 X bit 数据，其中 X 一定的。一次处理需要用 N 个CPU周期，一个CPU周期为 T s，那么对于网卡来说:
 
-- bandwidth = X/(N*T) bit/s
-- latency = N*T s
+- bandwidth = X/(NT) bit/s
+- latency = NT s
 
 即 latency 只关心数据在网卡上被处理的速度，使用的CPU周期越少，CPU越快，则 latency 越小，与网卡一次能够处理的数据多少没有关系。当 latency 很大的时候，如果网卡能够一次处理很多数据，那么其 bandwidth 还是可以很高。
