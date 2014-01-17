@@ -56,15 +56,10 @@ MEDIAN 意味着在一组数字中，有50%的数字小于MEDIAN，并且有50%�
 ## NETWORK LATENCY & THROUGHPUT & BANDWIDTH
 LATENCY
 >  In a network, latency, a synonym for delay, is an expression of how much time it takes for a packet of data to get from one designated point to another. In some usages , latency is measured by sending a packet that is returned to the sender and the round-trip time is considered the latency.
-
 > The latency assumption seems to be that data should be transmitted instantly between one point and another (that is, with no delay at all). The contributors to network latency include:
-
 > - Propagation: This is simply the time it takes for a packet to travel between one place and another at the speed of light.
-
 > - Transmission: The medium itself (whether optical fiber, wireless, or some other) introduces some delay. The size of the packet introduces delay in a round trip since a larger packet will take longer to receive and return than a short one.
-
 > - Router and other processing: Each gateway node takes time to examine and possibly change the header in a packet (for example, changing the hop count in the time-to-live field).
-
 > - Other computer and storage delays: Within networks at each end of the journey, a packet may be subject to storage and hard disk access delays at intermediate devices such as switches and bridges. (In backbone statistics, however, this kind of latency is probably not considered.)
 
 BANDWIDTH
