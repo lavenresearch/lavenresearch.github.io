@@ -55,7 +55,7 @@ MEDIAN 意味着在一组数字中，有50%的数字小于MEDIAN，并且有50%�
 
 ## NETWORK LATENCY & THROUGHPUT & BANDWIDTH
 LATENCY
->  In a network, latency, a synonym for delay, is an expression of how much time it takes for a packet of data to get from one designated point to another. In some usages (for example, AT&T), latency is measured by sending a packet that is returned to the sender and the round-trip time is considered the latency.
+>  In a network, latency, a synonym for delay, is an expression of how much time it takes for a packet of data to get from one designated point to another. In some usages (for example, AT & T), latency is measured by sending a packet that is returned to the sender and the round-trip time is considered the latency.
 
 > The latency assumption seems to be that data should be transmitted instantly between one point and another (that is, with no delay at all). The contributors to network latency include:
 
