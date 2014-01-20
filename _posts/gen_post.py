@@ -18,9 +18,9 @@ else:
 
 content = '''---
 layout: post
-category : research
+category : tools
 tagline: ""
-tags : [method]
+tags : [jekyll,blog]
 ---
 {% include JB/setup %}
 '''

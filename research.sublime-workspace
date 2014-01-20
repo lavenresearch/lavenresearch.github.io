@@ -1,0 +1,1296 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"locactnt",
+				"location_content"
+			],
+			[
+				"locctt",
+				"location_content"
+			],
+			[
+				"ba",
+				"background_story"
+			],
+			[
+				"tex",
+				"texts"
+			],
+			[
+				"ev",
+				"event"
+			],
+			[
+				"sw",
+				"show_location_content"
+			],
+			[
+				"qui",
+				"QUIT"
+			],
+			[
+				"k",
+				"KEYDOWN"
+			],
+			[
+				"key",
+				"key"
+			],
+			[
+				"cur",
+				"current_chapter"
+			],
+			[
+				"wind",
+				"window_size"
+			],
+			[
+				"wit",
+				"width"
+			],
+			[
+				"def",
+				"def	Function"
+			],
+			[
+				"__",
+				"__main__"
+			],
+			[
+				"foe",
+				"forest_lake"
+			],
+			[
+				"item",
+				"item	Itemize"
+			],
+			[
+				"tec",
+				"tech_session_url"
+			],
+			[
+				"titl",
+				"title"
+			],
+			[
+				"class",
+				"class"
+			],
+			[
+				"page",
+				"page_content"
+			],
+			[
+				"url",
+				"urlopen"
+			],
+			[
+				"_",
+				"_*_"
+			],
+			[
+				"all",
+				"all-nums"
+			],
+			[
+				"dta",
+				"data_size"
+			],
+			[
+				"da",
+				"data_size"
+			],
+			[
+				"F",
+				"False"
+			],
+			[
+				"tur",
+				"turn_op"
+			],
+			[
+				"turn",
+				"turn_grille"
+			],
+			[
+				"gril",
+				"grille_size"
+			],
+			[
+				"distan",
+				"distance_with_first"
+			],
+			[
+				"res",
+				"rest_elements"
+			],
+			[
+				"rest_el",
+				"rest_elements_size"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "_posts/gen_post.py",
+			"settings":
+			{
+				"buffer_size": 1262,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"git pushc",
+				"Git: Push Current Branch"
+			],
+			[
+				"git qc",
+				"Git: Quick Commit"
+			],
+			[
+				"git adc",
+				"Git: Add Current File"
+			],
+			[
+				"gitqc",
+				"Git: Quick Commit"
+			],
+			[
+				"gitac",
+				"Git: Add Current File"
+			],
+			[
+				"git ad",
+				"Git: Add..."
+			],
+			[
+				"gitacf",
+				"Git: Add Current File"
+			],
+			[
+				"git ac",
+				"Git: Amend Commit"
+			],
+			[
+				"giq",
+				"Git: Quick Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"gitad",
+				"Git: Add..."
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"repl",
+				"SublimeREPL: Python"
+			],
+			[
+				"gitpushc",
+				"Git: Push Current Branch"
+			],
+			[
+				"gitpush",
+				"Git: Push"
+			],
+			[
+				"gitqco",
+				"Git: Quick Commit"
+			],
+			[
+				"gitcomm",
+				"Git: Commit history"
+			],
+			[
+				"gitadd",
+				"Git: Add..."
+			],
+			[
+				"gitcm",
+				"Git: Commit"
+			],
+			[
+				"gits",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"git pushcb",
+				"Git: Push Current Branch"
+			],
+			[
+				"gitcommit",
+				"Git: Commit"
+			],
+			[
+				"gitco",
+				"Git: Commit"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"gitstat",
+				"Git: Status"
+			],
+			[
+				"gitdiffc",
+				"Git: Diff Current File"
+			],
+			[
+				"gitstatus",
+				"Git: Status"
+			],
+			[
+				"listp",
+				"Package Control: List Packages"
+			],
+			[
+				"removp",
+				"Package Control: Remove Package"
+			],
+			[
+				"insp",
+				"Package Control: Install Package"
+			],
+			[
+				"pccl",
+				"Package Control: List Packages"
+			],
+			[
+				"runc",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"mi",
+				"View: Toggle Minimap"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"rcf",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"rec",
+				"SublimeREPL: Clisp"
+			],
+			[
+				"rc",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"python",
+				"SublimeREPL: Python"
+			],
+			[
+				"vp",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"lt",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"latexto",
+				"LaTeXTools: View PDF"
+			],
+			[
+				"instap",
+				"Package Control: Install Package"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"rep",
+				"SublimeREPL: Python"
+			],
+			[
+				"replp",
+				"SublimeREPL: Python"
+			],
+			[
+				"run c",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"rcu",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"sche",
+				"SublimeREPL: Scheme"
+			],
+			[
+				"run",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"pci",
+				"Package Control: Install Package"
+			],
+			[
+				"rpr",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"prcf",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"replrn",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"replr",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"relprn",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"relpr",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"replrun",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"replpython",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"replpy",
+				"SublimeREPL: Python"
+			],
+			[
+				"setspl",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"sublime",
+				"SublimeREPL: Python"
+			],
+			[
+				"pythonrun",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"python ru",
+				"SublimeREPL: Python - RUN current file"
+			],
+			[
+				"spy",
+				"SublimeREPL: Python"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"pytho",
+				"SublimeREPL: Python"
+			],
+			[
+				"pci ",
+				"Package Control: Install Package"
+			],
+			[
+				"pcd",
+				"Package Control: Disable Package"
+			],
+			[
+				"pcin",
+				"Package Control: Install Package"
+			],
+			[
+				"print to",
+				"Print to HTML: print as HTML to new buffer"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pckin",
+				"Package Control: Install Package"
+			],
+			[
+				"pkg cis",
+				"Package Control: Install Package"
+			],
+			[
+				"sftp",
+				"SFTP: Show Panel"
+			],
+			[
+				"sftpsho",
+				"SFTP: Show Panel"
+			],
+			[
+				"packagisp",
+				"Package Control: Install Package"
+			],
+			[
+				"package control ip",
+				"Package Control: Install Package"
+			],
+			[
+				"ssh",
+				"Set Syntax: PHP"
+			],
+			[
+				"package install ",
+				"Package Control: Install Package"
+			],
+			[
+				"package controlin",
+				"Package Control: Install Package"
+			],
+			[
+				"package control:inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 562.0
+	},
+	"console":
+	{
+		"height": 162.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/project/github/lavenresearch.github.io/_posts/2014-01-17-writing_blogs_with_jekyll.md",
+		"/D/project/github/lavenresearch.github.io/_config.yml",
+		"/D/project/github/lavenresearch.github.io/_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md",
+		"/D/project/github/lavenresearch.github.io/_posts/2014-01-16-NOTE@-It's-Time-for-Low-Latency.md",
+		"/D/project/github/lavenresearch.github.io/index.md",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/notes/basic concepts for researching.md",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-15-2013!.org",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-15-interesting.org",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-15-strtok.org",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-15-7_days_in_guilin.org",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-15-abandoned_castle.org",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-15-run_before_old.org",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-14-CONCLUSION@-PACMan-coordinated-memory-caching-for-parallel-jobs.md",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-14-NOTE@-PACMan-coordinated-memory-caching-for-parallel-jobs.md",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/notes/CONCLUSION@ PACMan coordinated memory caching for parallel jobs.md",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-14-CONCLUSION@-PACMan-coordinated-memory-caching-for-parallel-jobs.md.md",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-14-NOTE@-PACMan-coordinated-memory-caching-for-parallel-jobs.md.md",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-14-PACMan-coordinated-memory-caching-for-parallel-jobs.md",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-13-PACMan-coordinated-memory-caching-for-parallel-jobs.md",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-06-method-to-search-and-read-paper.md",
+		"/D/project/github/lavenderwords.github.io/_drafts/test.md",
+		"/D/project/github/lavenderwords.github.io/_includes/JB/setup",
+		"/D/project/github/lavenderwords.github.io/_drafts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-06-method-search-and-read-paper.md",
+		"/D/project/github/lavenderwords.github.io/_config.yml",
+		"/D/project/github/lavenderwords.github.io/Rakefile",
+		"/D/project/github/lavenderwords.github.io/_posts/gen_post.py",
+		"/D/project/github/lavenderwords.github.io/lavenblog.sublime-project",
+		"/D/project/github/lavenderwords.github.io/README.md",
+		"/D/project/github/lavenderwords.github.io/index.md",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-06-note-test-post.md",
+		"/D/project/github/lavenderwords.github.io/_posts/2011-12-29-jekyll-introduction.md",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/README.md",
+		"/D/project/github/lavenderwords.github.io/_posts/2014-01-06-#NOTE#-The-Case-For-RAMCloud.md",
+		"/D/project/github/lavenderwords.github.io/_includes/JB/tags_list",
+		"/D/project/github/lavenderwords.github.io/_includes/JB/pages_list",
+		"/D/project/github/lavenderwords.github.io/_posts/core-samples/2011-12-29-jekyll-introduction.md",
+		"/D/project/github/lavenderwords.github.io/tags.html",
+		"/D/project/github/lavenderwords.github.io/_includes/themes/twitter/page.html",
+		"/D/project/github/lavenderwords.github.io/categories.html",
+		"/D/project/github/lavenderwords.github.io/index.html",
+		"/D/project/github/lavenderwords.github.io/dairies/7_days_in_guilin.html",
+		"/D/project/github/lavenderwords.github.io/dairies/interesting.html",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/webpages/main.html",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/Git.sublime-settings",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/BracketHighlighter/Example.sublime-keymap",
+		"/D/project/GAE/paper_reading_hippo/main.py",
+		"/D/project/github/lavenderwords.github.io/lavenblog.sublime-workspace",
+		"/D/project/github/lavenderwords.github.io/_layouts/default.html",
+		"/D/project/github/lavenderwords.github.io/_posts/2013-11-19-latex.html",
+		"/D/project/github/lavenderwords.github.io/params.json",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/daily_life/daily_life.sublime-project",
+		"/C/Users/lav/Desktop/20131117todolist.txt",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/world in my eyes/world_in_my_eyes.py",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/world in my eyes/background_story.py",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/world in my eyes/places.py",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/world in my eyes/world_in_my_eyes.sublime-project",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/world in my eyes/example/dungeons_rpg/dungeon_rpg.py",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/F/music/a.&e.pop/The Beatles/A Hard Day's Night/A Hard Day's Night.cue",
+		"/F/music/a.&e.pop/Green Day - Awesome As Fuck (2011) [FLAC]/Awesome As Fuck.cue",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/world in my eyes/example/game.py",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/world in my eyes/original_images/jumpingGirl.svg",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/world in my eyes/pl",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/world in my eyes/places.txt",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/world in my eyes/world_in_my_eyes.sublime-workspace",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/SublimeREPL.sublime-settings",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/repls/sublimepython_repl.py",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/completions.py",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/sublimerepl.py",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/run_existing_command.py",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SFTP/Default (Windows).sublime-keymap",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SideBarEnhancements/Default (Windows).sublime-keymap",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/Default (Windows).sublime-keymap",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/README.markdown",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/Print to HTML.sublime-settings",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/Pylinter/README.rst",
+		"/D/books/life/text/iriver_cover_story/english_novels/a_song_of_ice_and_fire/George R. R. Martin - [A SONG OF ICE AND FIRE 01] - A Game Of Thrones (v5.0).epub",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/world in my eyes/PyGame/game.py",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/pnfs_nfsv4_1_file_layout_intro/pnfs_nfsv4_1_file_layout_intro.aux",
+		"/D/Dropbox/template/project_report_template.tex",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/pnfs_operations_intro/pnfs_operations_intro.tex",
+		"/D/Dropbox/template/template-essay/essay.tex",
+		"/E/pf/CTEX/MiKTeX/tex/latex/ctex/engine/ctex-cjk-engine.def",
+		"/D/Dropbox/template/template-report/report-howtotex.tex",
+		"/C/Users/lav/Desktop/suyi_write_res.txt",
+		"/D/project/工作交接_华为pnfs/M200972378_詹天/系统相关/mmds_cluster.patch",
+		"/D/papers/usenix_papers/__MACOSX/._hotstorage13-papers",
+		"/C/Users/lav/Desktop/test/working/old/storage virtualizaiton in datacenter/main.tex",
+		"/E/pf/python274/packages/beautifulsoup4-4.3.1.tar/dist/beautifulsoup4-4.3.1/beautifulsoup4-4.3.1/setup.py",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/web craber/webc.py",
+		"/C/Users/lav/Desktop/Bunkr Temporary Presentation.pdf",
+		"/E/pnfs/linux-pnfs-pnfs-all-3.8-33142d8/fs/nfsd/nfs4pnfsdlm.c",
+		"/E/pnfs/pnfs-nfs-utils-HEAD-76e642c/README",
+		"/E/pnfs/linux-pnfs-pnfs-all-3.8-33142d8/fs/nfsd/export.c",
+		"/E/pnfs/linux-pnfs-pnfs-all-3.8-33142d8/fs/nfsd/nfs4pnfsd.c",
+		"/E/pnfs/linux-3.10/fs/gfs2/main.c",
+		"/E/pnfs/linux-3.10/fs/gfs2/export.c",
+		"/D/project/GAE/paper_reading_hippo/app.yaml",
+		"/E/pnfs/pvfs_layout_driver/pvfs2-1.5.1/INSTALL",
+		"/E/pnfs/pvfs_layout_driver/pvfs2-1.5.1-ld-20061114/src/kernel/linux-2.6/pvfs2-pnfs.h",
+		"/E/pnfs/pvfs_layout_driver/pvfs2-1.5.1-server-20061114/examples/pvfs2-server.rc.in",
+		"/E/pnfs/pvfs_layout_driver/pvfs2-1.5.1-ld-20061114/INSTALL",
+		"/E/pnfs/pvfs_layout_driver/pvfs2-1.5.1-ld-20061114/README",
+		"/C/Users/lav/Desktop/test/working/English",
+		"/C/Users/lav/Desktop/test/working/notes.sublime-project",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/lav/Desktop/orgmode.html",
+		"/C/Users/lav/Desktop/orgmode",
+		"/C/Users/lav/Desktop/EtsxS0WRh0.torrent",
+		"/D/project/706项目/测试结果/mem_and_same_size/4Mf.log",
+		"/D/project/706项目/测试结果/mem_and_same_size/8M.log",
+		"/D/project/706项目/测试结果/mem_and_same_size/16M.log",
+		"/D/project/工作交接_华为pnfs/work_zwh/热点迁移/毕业设计版/大机房代码/gdesign/istall.sh",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/to_read_paper_list/DVM Towards a Datacenter-Scale Virtual Machine/kmeans/DISA/kmeans-p12_8m-k1000-r64.disa",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/research/storage_virtualization_in_datacenter.tex",
+		"/H/book/docs/西安-吃.txt",
+		"/H/book/docs/强烈推荐的　　",
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/to_read_paper_list/DVM Towards a Datacenter-Scale Virtual Machine/kmeans/x10/KMeansSPMD.x10",
+		"/D/project/706项目/background_docs/pnfs/draft notes from pNFS meeting held in Vancouver",
+		"/E/pf/python274/pylint-0.28.0/README",
+		"/E/pf/pylint-0.28.0/README",
+		"/E/pf/pylint-0.28.0/setup.py",
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/Pylinter.sublime-settings"
+	],
+	"find":
+	{
+		"height": 42.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"method",
+			"research",
+			"*",
+			"/",
+			"&",
+			"<",
+			"method",
+			"research",
+			"t",
+			"n",
+			"x",
+			"strtok",
+			"run_before_old",
+			"interesting",
+			"abandoned_castle",
+			"2013",
+			"!\"",
+			"7_days_in_guilin",
+			"notes",
+			"research",
+			"2",
+			"method",
+			"report_name",
+			"paper_name",
+			"search",
+			"md",
+			"f.",
+			"f",
+			"e.",
+			"e",
+			"d.",
+			"d",
+			"c.",
+			"c",
+			"b.",
+			"b",
+			"a.",
+			"a",
+			"(5)",
+			"(4)",
+			"(3)",
+			"(2)",
+			"(1)",
+			"---\n",
+			"读论文前：",
+			"source",
+			"\\",
+			"post_content_part2",
+			"filename",
+			"file_content",
+			"gen_file",
+			"test",
+			"BASE_PATH",
+			"|-----------------------+----------------------------------------------------|",
+			"        ",
+			"####",
+			"#",
+			"*",
+			"tutorial",
+			"lavenderwords",
+			"laven",
+			"LAVEN",
+			"laven",
+			"LAVEN",
+			"laven",
+			"LAVEN",
+			"laven",
+			"LAVEN",
+			"serif",
+			"stylesheets",
+			"./stylesheet",
+			"stylesheet",
+			"./css",
+			"/css",
+			"css",
+			"=\"./",
+			"css",
+			"outline-3",
+			"outline",
+			"<div id=\"outline-container-5-1\" class=\"outline-3\">\n",
+			"div",
+			"3",
+			"text",
+			"outline",
+			"dairy",
+			"stories",
+			"pictures",
+			"stories",
+			"music",
+			"pictures",
+			"show_location_content",
+			"bianjing1",
+			"                                        ",
+			"\n                                        ",
+			"location",
+			"current_position",
+			"uncover_locations",
+			"preface_pictures",
+			"background_picture",
+			"step",
+			"很久很久以前，世界是一片无边无际的森林。",
+			"很久很久以前，世界是一片无边无际的森林。\n那时候，人们对树心怀敬畏。\n在他们心中，树是过去，是未来，是勇气和智慧。\n那时候，人们能够听到树的声音。\n每棵树都有自己的故事，这些故事在悠长的岁月里同树一起慢慢生长。\n那时候，这些世世代代生活在森林的人们，称自己为森林之子。\n\n每一个森林之子在十六岁的那一天，都会接受整个家族为其举办的成年仪式。\n这一天之后，那个他们了如指掌的森林会变成另外一个样子。\n族长在仪式上吟唱的古老歌谣将开启他们心中通向森林的窗口。\n曾经隐藏在虫鸣鸟啼中，隐藏在风和阳光中的树的声音会透过这个窗口，印在他们心上。\n",
+			"\n",
+			"很久很久以前，世界是一片无边无际的森林。\n那时候，人们对树心怀敬畏。\n在他们心中，树是过去，是未来，是勇气和智慧。\n那时候，人们能够听到树的声音。",
+			"[]",
+			"survivedtext",
+			"(%",
+			"1000",
+			"(/",
+			"((",
+			"(+\":\"+",
+			"60000",
+			"Draw",
+			"draw\ndraw",
+			"time",
+			"50",
+			"show_location_content",
+			"uncover_locations",
+			"),            ",
+			"']",
+			"爱尔兰",
+			"埃及金字塔",
+			"亚马逊河",
+			"非洲大草原",
+			"']",
+			"南极",
+			"']",
+			"武汉"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"5.",
+			"4.",
+			"3.",
+			"2.",
+			"1.",
+			"\\\\",
+			"###",
+			"##",
+			"#"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_posts/gen_post.py",
+					"settings":
+					{
+						"buffer_size": 1262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								156,
+								156
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 40.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 145.0
+	},
+	"output.git":
+	{
+		"height": 144.0
+	},
+	"output.markdown":
+	{
+		"height": 144.0
+	},
+	"output.sftp":
+	{
+		"height": 118.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 132.0
+	},
+	"replace":
+	{
+		"height": 76.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"con",
+				"_config.yml"
+			],
+			[
+				"",
+				"_posts/2014-01-17-writing_blogs_with_jekyll.md"
+			],
+			[
+				"gen",
+				"_posts/gen_post.py"
+			],
+			[
+				"wr",
+				"_posts/2014-01-17-writing_blogs_with_jekyll.md"
+			],
+			[
+				"writing",
+				"_posts/2014-01-17-writing_blogs_with_jekyll.md"
+			],
+			[
+				"wri",
+				"_posts/2014-01-17-writing_blogs_with_jekyll.md"
+			],
+			[
+				"ind",
+				"index.md"
+			],
+			[
+				"ba",
+				"_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md"
+			],
+			[
+				"latency",
+				"_posts/2014-01-16-NOTE@-It's-Time-for-Low-Latency.md"
+			],
+			[
+				"b",
+				"_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md"
+			],
+			[
+				"co",
+				"_config.yml"
+			],
+			[
+				"in",
+				"index.md"
+			],
+			[
+				"7d",
+				"_posts/2014-01-15-7_days_in_guilin.org"
+			],
+			[
+				"str",
+				"_posts/2014-01-15-strtok.org"
+			],
+			[
+				"2i",
+				"_posts/2014-01-15-interesting.org"
+			],
+			[
+				"20",
+				"_posts/2014-01-15-2013!.org"
+			],
+			[
+				"pac",
+				"_posts/2014-01-14-NOTE@-PACMan-coordinated-memory-caching-for-parallel-jobs.md"
+			],
+			[
+				"set",
+				"_includes/JB/setup"
+			],
+			[
+				"bas",
+				"_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md"
+			],
+			[
+				"20b",
+				"_drafts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md"
+			],
+			[
+				"2",
+				"_posts/2014-01-13-PACMan-coordinated-memory-caching-for-parallel-jobs.md"
+			],
+			[
+				"201",
+				"_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md"
+			],
+			[
+				"2m",
+				"_posts/2014-01-06-method-search-and-read-paper.md"
+			],
+			[
+				"ra",
+				"Rakefile"
+			],
+			[
+				"2n",
+				"_posts/2014-01-06-note-test-post.md"
+			],
+			[
+				"taglis",
+				"_includes/JB/tags_list"
+			],
+			[
+				"pageli",
+				"_includes/JB/pages_list"
+			],
+			[
+				"setup",
+				"_includes/JB/setup"
+			],
+			[
+				"2011",
+				"_posts/2011-12-29-jekyll-introduction.md"
+			],
+			[
+				"tag",
+				"tags.html"
+			],
+			[
+				"categ",
+				"categories.html"
+			],
+			[
+				"sample",
+				"_posts/core-samples/2011-12-29-jekyll-introduction.md"
+			],
+			[
+				"ini",
+				"dairies/interesting.html"
+			],
+			[
+				"p",
+				"params.json"
+			],
+			[
+				"i",
+				"index.html"
+			],
+			[
+				"w",
+				"world_in_my_eyes.py"
+			],
+			[
+				"bs",
+				"background_story.py"
+			],
+			[
+				"game",
+				"example/game.py"
+			],
+			[
+				"j",
+				"original_images/jumpingGirl.svg"
+			],
+			[
+				"o",
+				"original_images/jumpingGirl.svg"
+			],
+			[
+				"pl",
+				"places.py"
+			],
+			[
+				"8",
+				"/D/project/706项目/测试结果/mem_and_same_size/8M.log"
+			],
+			[
+				"4mf",
+				"/D/project/706项目/测试结果/mem_and_same_size/4Mf.log"
+			],
+			[
+				"tes",
+				"/C/Users/lav/Desktop/test/working/test.py"
+			],
+			[
+				"4",
+				"/D/project/706项目/测试结果/mem_and_same_size/4Mf.log"
+			],
+			[
+				"te",
+				"/C/Users/lav/Desktop/test/working/test.py"
+			],
+			[
+				"u",
+				"untitled"
+			],
+			[
+				"1",
+				"/D/project/706项目/测试结果/mem_and_same_size/16M.log"
+			],
+			[
+				"8m",
+				"/D/project/706项目/测试结果/mem_and_same_size/8M.log"
+			],
+			[
+				"nfs",
+				"NFSv4 delivers seamless network access"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"d",
+				"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/daily_life/daily.sublime-project"
+			],
+			[
+				"n",
+				"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/notes/notes.sublime-project"
+			],
+			[
+				"res",
+				"/D/project/github/lavenresearch.github.io/research.sublime-project"
+			],
+			[
+				"l",
+				"/D/project/github/lavenderwords.github.io/lavenblog.sublime-project"
+			],
+			[
+				"",
+				"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/daily_life/daily.sublime-project"
+			],
+			[
+				"w",
+				"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/world in my eyes/world_in_my_eyes.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": false,
+	"side_bar_width": 180.0,
+	"status_bar_visible": true
+}
