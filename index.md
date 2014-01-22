@@ -5,7 +5,7 @@ tagline: research notes
 ---
 {% include JB/setup %}
 
-## NOTEs LIST
+## NOTEs
 
 ANYTHING about researching!!
 
@@ -14,5 +14,3 @@ ANYTHING about researching!!
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
-
-
