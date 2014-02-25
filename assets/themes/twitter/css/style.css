@@ -68,4 +68,11 @@ body {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	
+
+p img{
+  width:100%;
+}
+
+li img{
+    width:100%;
+}
