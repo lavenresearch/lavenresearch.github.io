@@ -10,7 +10,7 @@ tags : [in-memory,cache,big data,hadoop]
 Time range: from 20130906 to 20140206
 
 GridGain5.2 产品结构：
-![](./gg_stack_670.png)
+![](/images/gg_stack_670.png)
 
 ## Cache < Data Grid < Database
 1. in memory distributed cache 
@@ -46,7 +46,7 @@ In-Memory Hadoop Accelerator 的目标：最小的迁移代价，使 mapreduce �
 这是 In-memory 在大数据存储及处理上的应用。（不仅仅局限于数据库了！！）
 
 1. In-Memory File System
-    * ![](./in_memory_hadoop2_white.png)
+    * ![](/images/in_memory_hadoop2_white.png)
     * standalone version(file level cache)
         -  trades capacity for maximum performance.(**内存的容量还是会有限制**)
     * caching HDFS(block level cache)
