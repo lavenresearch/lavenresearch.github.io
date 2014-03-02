@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"githu",
+				"github"
+			],
+			[
 				"locactnt",
 				"location_content"
 			],
@@ -136,18 +140,18 @@
 	"buffers":
 	[
 		{
-			"file": "_posts/gen_post.py",
+			"file": "_posts/gen_blank_post.py",
 			"settings":
 			{
-				"buffer_size": 1338,
+				"buffer_size": 846,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "index.md",
+			"file": "_posts/2014-02-24-Is-Low-Latency-The-ONE.md",
 			"settings":
 			{
-				"buffer_size": 336,
+				"buffer_size": 183,
 				"line_ending": "Windows"
 			}
 		}
@@ -532,12 +536,20 @@
 	},
 	"file_history":
 	[
-		"/D/project/github/lavenresearch.github.io/_posts/2014-01-14-CONCLUSION@-PACMan-coordinated-memory-caching-for-parallel-jobs.md",
-		"/D/project/github/lavenresearch.github.io/_posts/2014-01-17-writing_blogs_with_jekyll.md",
 		"/D/project/github/lavenresearch.github.io/_config.yml",
+		"/D/project/github/lavenresearch.github.io/_posts/2014-02-25-NOTE@-GridGain-CTO-Nikita-Ivanov-blog-from-20130906-to-20140206.md",
+		"/D/project/github/lavenresearch.github.io/index.md",
+		"/D/project/github/lavenresearch.github.io/_posts/2014-02-25-#NOTE#-GridGain-CTO-Nikita-Ivanov's-blog-from-20130906-to-20140206.md",
+		"/D/project/github/lavenresearch.github.io/manifest.yml",
+		"/D/project/github/lavenresearch.github.io/assets/themes/twitter/css/style.css",
+		"/D/project/github/lavenresearch.github.io/_posts/2014-02-24-test-gen-blank-post.md",
+		"/D/project/github/lavenresearch.github.io/_posts/gen_post.py",
+		"/D/project/github/lavenresearch.github.io/_posts/gen_blank_post.py",
+		"/D/project/github/lavenresearch.github.io/_posts/2014-01-23-writing_blogs_with_jekyll.md",
+		"/D/project/github/lavenresearch.github.io/_posts/2014-01-17-writing_blogs_with_jekyll.md",
+		"/D/project/github/lavenresearch.github.io/_posts/2014-01-14-CONCLUSION@-PACMan-coordinated-memory-caching-for-parallel-jobs.md",
 		"/D/project/github/lavenresearch.github.io/_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md",
 		"/D/project/github/lavenresearch.github.io/_posts/2014-01-16-NOTE@-It's-Time-for-Low-Latency.md",
-		"/D/project/github/lavenresearch.github.io/index.md",
 		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/notes/basic concepts for researching.md",
 		"/D/project/github/lavenderwords.github.io/_posts/2014-01-15-2013!.org",
 		"/D/project/github/lavenderwords.github.io/_posts/2014-01-15-interesting.org",
@@ -651,15 +663,7 @@
 		"/D/project/706项目/测试结果/mem_and_same_size/8M.log",
 		"/D/project/706项目/测试结果/mem_and_same_size/16M.log",
 		"/D/project/工作交接_华为pnfs/work_zwh/热点迁移/毕业设计版/大机房代码/gdesign/istall.sh",
-		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/to_read_paper_list/DVM Towards a Datacenter-Scale Virtual Machine/kmeans/DISA/kmeans-p12_8m-k1000-r64.disa",
-		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/research/storage_virtualization_in_datacenter.tex",
-		"/H/book/docs/西安-吃.txt",
-		"/H/book/docs/强烈推荐的　　",
-		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/to_read_paper_list/DVM Towards a Datacenter-Scale Virtual Machine/kmeans/x10/KMeansSPMD.x10",
-		"/D/project/706项目/background_docs/pnfs/draft notes from pNFS meeting held in Vancouver",
-		"/E/pf/python274/pylint-0.28.0/README",
-		"/E/pf/pylint-0.28.0/README",
-		"/E/pf/pylint-0.28.0/setup.py"
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/to_read_paper_list/DVM Towards a Datacenter-Scale Virtual Machine/kmeans/DISA/kmeans-p12_8m-k1000-r64.disa"
 	],
 	"find":
 	{
@@ -678,6 +682,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"![](/",
+			"![](",
+			"(/",
+			"d",
+			"a",
+			"test",
+			"gen",
+			"xrange",
+			"post_content_part2",
 			"database",
 			"jekyll",
 			"blog",
@@ -796,16 +809,7 @@
 			"60000",
 			"Draw",
 			"draw\ndraw",
-			"time",
-			"50",
-			"show_location_content",
-			"uncover_locations",
-			"),            ",
-			"']",
-			"爱尔兰",
-			"埃及金字塔",
-			"亚马逊河",
-			"非洲大草原"
+			"time"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -837,18 +841,18 @@
 			[
 				{
 					"buffer": 0,
-					"file": "_posts/gen_post.py",
+					"file": "_posts/gen_blank_post.py",
 					"settings":
 					{
-						"buffer_size": 1338,
+						"buffer_size": 846,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								593,
-								593
+								128,
+								128
 							]
 						],
 						"settings":
@@ -998,18 +1002,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "index.md",
+					"file": "_posts/2014-02-24-Is-Low-Latency-The-ONE.md",
 					"settings":
 					{
-						"buffer_size": 336,
+						"buffer_size": 183,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								209,
-								209
+								183,
+								183
 							]
 						],
 						"settings":
@@ -1115,6 +1119,7 @@
 								"trailing": true,
 								"wsh": true
 							},
+							"parser": "Github Flavored Markdown",
 							"pep8": true,
 							"pep8_ignore":
 							[
@@ -1147,7 +1152,8 @@
 								"Ruby on Rails": "ruby"
 							},
 							"sublimelinter_wrap_find": true,
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"target": "browser"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1220,6 +1226,42 @@
 		"selected_items":
 		[
 			[
+				"conf",
+				"_config.yml"
+			],
+			[
+				"grid",
+				"_posts/2014-02-25-NOTE@-GridGain-CTO-Nikita-Ivanov-blog-from-20130906-to-20140206.md"
+			],
+			[
+				"cong",
+				"_config.yml"
+			],
+			[
+				"in",
+				"index.md"
+			],
+			[
+				"yml",
+				"manifest.yml"
+			],
+			[
+				"st",
+				"assets/themes/twitter/css/style.css"
+			],
+			[
+				"low",
+				"_posts/2014-02-24-Is-Low-Latency-The-ONE.md"
+			],
+			[
+				"genb",
+				"_posts/gen_blank_post.py"
+			],
+			[
+				"w",
+				"_posts/2014-01-17-writing_blogs_with_jekyll.md"
+			],
+			[
 				"ind",
 				"index.md"
 			],
@@ -1266,10 +1308,6 @@
 			[
 				"co",
 				"_config.yml"
-			],
-			[
-				"in",
-				"index.md"
 			],
 			[
 				"7d",
@@ -1364,10 +1402,6 @@
 				"index.html"
 			],
 			[
-				"w",
-				"world_in_my_eyes.py"
-			],
-			[
 				"bs",
 				"background_story.py"
 			],
@@ -1432,12 +1466,20 @@
 		"selected_items":
 		[
 			[
-				"l",
-				"/D/project/github/lavenderwords.github.io/lavenblog.sublime-project"
+				"",
+				"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/daily_life/daily.sublime-project"
+			],
+			[
+				"rd",
+				"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/daily_life/daily.sublime-project"
 			],
 			[
 				"d",
 				"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/daily_life/daily.sublime-project"
+			],
+			[
+				"l",
+				"/D/project/github/lavenderwords.github.io/lavenblog.sublime-project"
 			],
 			[
 				"n",
@@ -1446,10 +1488,6 @@
 			[
 				"res",
 				"/D/project/github/lavenresearch.github.io/research.sublime-project"
-			],
-			[
-				"",
-				"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/daily_life/daily.sublime-project"
 			],
 			[
 				"w",
@@ -1461,7 +1499,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 302.0,
+	"side_bar_visible": false,
+	"side_bar_width": 242.0,
 	"status_bar_visible": true
 }
