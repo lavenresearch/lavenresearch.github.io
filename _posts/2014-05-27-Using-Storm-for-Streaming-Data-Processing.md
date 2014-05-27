@@ -76,8 +76,8 @@ PS：下文中没有特殊说明操作，表示在所有的storm节点上都要�
     chmod 775 ./bin/storm
     PATH=$PATH:/opt/storm-0.7.0/bin
     export PATH
-    CLASSPATH=$CLASSPATH:/opt/storm-0.7.0/lib/*
-    CLASSPATH=$CLASSPATH:/opt/storm-0.7.0/conf/*
+    CLASSPATH=$CLASSPATH:/opt/storm-0.7.0/lib/ *
+    CLASSPATH=$CLASSPATH:/opt/storm-0.7.0/conf/ *
     export CLASSPATH
 
 #### 配置 Storm
@@ -110,11 +110,11 @@ PS：下文中没有特殊说明操作，表示在所有的storm节点上都要�
 1. 安装Java
 2. 下载Storm并解压
 3. 将 [storm path]/bin/ 加入到环境变量 PATH 中
-4. 将 [storm path]/lib/* 加入到环境变量 CLASSPATH 中
+4. 将 [storm path]/lib/ * 加入到环境变量 CLASSPATH 中
 5. 更改 [storm path]/conf/storm.yaml 中的 nimbus.host:"[nimbus ip addr]"
 6. 编写 Java 程序时，import 所需的与 storm 相关的 packages
 7. 使用 javac 将 java 源码程序编译成为 .class
-8. 使用 jar cf xxx.jar *.class 将 java 程序打包
+8. 使用 jar cf xxx.jar * .class 将 java 程序打包
 9. 通过 storm client 的命令行将生成的 jar 文件提交到 storm cluster
 
 ## 相关资料
