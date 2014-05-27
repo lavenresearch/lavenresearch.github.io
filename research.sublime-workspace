@@ -536,6 +536,7 @@
 	},
 	"file_history":
 	[
+		"/D/project/github/lavenresearch.github.io/_includes/themes/twitter/default.html",
 		"/D/project/github/lavenresearch.github.io/_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md",
 		"/D/project/github/lavenresearch.github.io/index.md",
 		"/D/project/github/lavenresearch.github.io/_config.yml",
@@ -662,8 +663,7 @@
 		"/D/project/706项目/测试结果/mem_and_same_size/4Mf.log",
 		"/D/project/706项目/测试结果/mem_and_same_size/8M.log",
 		"/D/project/706项目/测试结果/mem_and_same_size/16M.log",
-		"/D/project/工作交接_华为pnfs/work_zwh/热点迁移/毕业设计版/大机房代码/gdesign/istall.sh",
-		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/to_read_paper_list/DVM Towards a Datacenter-Scale Virtual Machine/kmeans/DISA/kmeans-p12_8m-k1000-r64.disa"
+		"/D/project/工作交接_华为pnfs/work_zwh/热点迁移/毕业设计版/大机房代码/gdesign/istall.sh"
 	],
 	"find":
 	{
@@ -1012,8 +1012,8 @@
 						"selection":
 						[
 							[
-								107,
-								107
+								166,
+								166
 							]
 						],
 						"settings":
@@ -1466,16 +1466,16 @@
 		"selected_items":
 		[
 			[
+				"",
+				"/D/project/github/reading/reading.sublime-project"
+			],
+			[
 				"d",
 				"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/daily_life/daily.sublime-project"
 			],
 			[
 				"read",
 				"/D/project/github/reading/reading.sublime-project"
-			],
-			[
-				"",
-				"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/daily_life/daily.sublime-project"
 			],
 			[
 				"rd",

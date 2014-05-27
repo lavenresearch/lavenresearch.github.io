@@ -3,9 +3,9 @@ import time
 
 # basic information start
 
-name = "#NOTE# GridGain CTO Nikita Ivanov's blog from 20130906 to 20140206"
-category = "memory"
-tags = "in-memory","cache","big data","hadoop"
+name = "Using Storm for Streaming Data Processing"
+category = "Streaming"
+tags = "stream","real time","deploy","install","usage","storm"
 
 # end
 
