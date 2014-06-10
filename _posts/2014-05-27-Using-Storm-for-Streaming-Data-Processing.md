@@ -7,6 +7,10 @@ tags : [stream,real time,deploy,install,usage,storm]
 {% include JB/setup %}
 
 20140527
+# 使用中的问题
+1. 无法设置全局变量，及多个bolts之间无法共享状态。在这里，由于需要对阈值进行训练，因此，bottleneckLocatingBolt能够修改CmpAverageBolt中的阈值，不知怎样实现。
+2. 未试验是否能够在topology中加入环。即使CmpAverageBolt能够接收BottleneckLocatingBolt的tuples，如果能够接收，CmpAverageBolt如何分辨tuple来自哪里。以对不同来源的tuple采用不同的处理。
+
 # Storm 的部署及使用
 ## Storm程序执行环境部署
 ### 准备工作
