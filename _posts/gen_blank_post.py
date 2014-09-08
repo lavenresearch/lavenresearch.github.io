@@ -3,9 +3,9 @@ import time
 
 # basic information start
 
-name = "Using Storm for Streaming Data Processing"
+name = "Introduction of Stream Processing"
 category = "Streaming"
-tags = "stream","real time","deploy","install","usage","storm"
+tags = "stream processing","real time","introduction","cloud computing"
 
 # end
 
