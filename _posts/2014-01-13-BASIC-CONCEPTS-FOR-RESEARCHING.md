@@ -67,7 +67,7 @@ BANDWIDTH
 
 THROUGHPUT
 > The actual rate that information is transferred.
-> Throughput is the number of messages successfully delivered per unit time. Throughput is controlled by available bandwidth, as well as the available signal-to-noise ratio and hardware limitations. 
+> Throughput is the number of messages successfully delivered per unit time. Throughput is controlled by available bandwidth, as well as the available signal-to-noise ratio and hardware limitations.
 
 网卡（NIC）这部分的latency和bandwidth的区别：
 网卡一次最多能够处理 X bit 数据，其中 X 一定的。一次处理需要用 N 个CPU周期，一个CPU周期为 T s，那么对于网卡来说:
@@ -76,3 +76,13 @@ THROUGHPUT
 - latency = NT s
 
 即 latency 只关心数据在网卡上被处理的速度，使用的CPU周期越少，CPU越快，则 latency 越小，与网卡一次能够处理的数据多少没有关系。当 latency 很大的时候，如果网卡能够一次处理很多数据，那么其 bandwidth 还是可以很高。
+
+## Availability vs. Reliability
+
+Availability ：指应用或服务可用的时间，例如，一年中其正常运行的时间总和。
+
+Reliability ：指发生失效的概率。
+
+Availability 和 Reliability 之间的差距在于，当失效发生后，应用或者服务恢复正常所需要的时间。当这个时间很长时，即使 Reliability 很高（失效很少发生），其 Availability 也可能会比较低，反之亦然。
+
+
