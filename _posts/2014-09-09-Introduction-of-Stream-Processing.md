@@ -8,8 +8,6 @@ tags : [stream processing,real time,introduction,cloud computing]
 
 # 流数据处理系统简介
 
-苏毅
-
 20140908
 
 ## 一、典型应用
