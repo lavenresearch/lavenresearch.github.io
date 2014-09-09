@@ -1,7 +1,7 @@
 ---
 layout: post
 category : Streaming
-tagline: ""
+tagline: " "
 tags : [stream processing,real time,introduction,cloud computing]
 ---
 {% include JB/setup %}
