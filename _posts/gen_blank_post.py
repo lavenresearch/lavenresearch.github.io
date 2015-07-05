@@ -3,9 +3,9 @@ import time
 
 # basic information start
 
-name = "Introduction of Stream Processing"
-category = "Streaming"
-tags = "stream processing","real time","introduction","cloud computing"
+name = "Evaluate Openstack Swift Data Distributing Approach"
+category = "Openstack"
+tags = "cloud computing","swift","object storage","openstack"
 
 # end
 
