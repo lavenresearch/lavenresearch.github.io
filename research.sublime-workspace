@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"devic",
+				"devices"
+			],
+			[
+				"S",
+				"Storage"
+			],
+			[
 				"githu",
 				"github"
 			],
@@ -143,7 +151,7 @@
 			"file": "_posts/gen_blank_post.py",
 			"settings":
 			{
-				"buffer_size": 841,
+				"buffer_size": 849,
 				"line_ending": "Windows"
 			}
 		},
@@ -151,7 +159,15 @@
 			"file": "_posts/gen_post.py",
 			"settings":
 			{
-				"buffer_size": 1338,
+				"buffer_size": 1298,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/2015-07-03-Evaluate-Openstack-Swift-Data-Distributing-Approach.md",
+			"settings":
+			{
+				"buffer_size": 4803,
 				"line_ending": "Windows"
 			}
 		}
@@ -540,6 +556,18 @@
 	},
 	"file_history":
 	[
+		"/D/project/github/reading/_posts/2014-09-11-CONCLUSION@-Comparing-Distributed-Online-Stream-Processing-Systems-Considering-Fault-Tolerance-Issues.md",
+		"/D/project/github/reading/index.html",
+		"/D/project/github/blogThemes/reading/_config.yml",
+		"/D/project/github/reading/_config.yml",
+		"/D/project/github/reading/_layouts/page.html",
+		"/D/project/github/reading/_layouts/post.html",
+		"/D/project/github/reading/_includes/head.html",
+		"/D/project/github/reading/_includes/sidebar.html",
+		"/D/project/github/reading/_layouts/default.html",
+		"/D/project/github/reading/_posts/2014-01-06-NOTE@-The-Case-For-RAMCloud.md",
+		"/D/project/github/reading/_posts/2012-02-06-whats-jekyll.md",
+		"/D/project/github/lavenresearch.github.io/_posts/2015-07-03-Evaluate-Openstack-Swift-Data-Distributing-Approach.html",
 		"/D/project/github/lavenresearch.github.io/_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md",
 		"/D/project/github/lavenresearch.github.io/_posts/2014-09-09-Introduction-of-Stream-Processing.md",
 		"/D/project/github/lavenresearch.github.io/_includes/themes/twitter/default.html",
@@ -655,19 +683,7 @@
 		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/web craber/webc.py",
 		"/C/Users/lav/Desktop/Bunkr Temporary Presentation.pdf",
 		"/E/pnfs/linux-pnfs-pnfs-all-3.8-33142d8/fs/nfsd/nfs4pnfsdlm.c",
-		"/E/pnfs/pnfs-nfs-utils-HEAD-76e642c/README",
-		"/E/pnfs/linux-pnfs-pnfs-all-3.8-33142d8/fs/nfsd/export.c",
-		"/E/pnfs/linux-pnfs-pnfs-all-3.8-33142d8/fs/nfsd/nfs4pnfsd.c",
-		"/E/pnfs/linux-3.10/fs/gfs2/main.c",
-		"/E/pnfs/linux-3.10/fs/gfs2/export.c",
-		"/D/project/GAE/paper_reading_hippo/app.yaml",
-		"/E/pnfs/pvfs_layout_driver/pvfs2-1.5.1/INSTALL",
-		"/E/pnfs/pvfs_layout_driver/pvfs2-1.5.1-ld-20061114/src/kernel/linux-2.6/pvfs2-pnfs.h",
-		"/E/pnfs/pvfs_layout_driver/pvfs2-1.5.1-server-20061114/examples/pvfs2-server.rc.in",
-		"/E/pnfs/pvfs_layout_driver/pvfs2-1.5.1-ld-20061114/INSTALL",
-		"/E/pnfs/pvfs_layout_driver/pvfs2-1.5.1-ld-20061114/README",
-		"/C/Users/lav/Desktop/test/working/English",
-		"/C/Users/lav/Desktop/test/working/notes.sublime-project"
+		"/E/pnfs/pnfs-nfs-utils-HEAD-76e642c/README"
 	],
 	"find":
 	{
@@ -686,6 +702,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"对时延的要求相对宽松",
+			"swift",
+			"partitions",
+			"    ",
+			"\n    ",
+			">",
 			"markdown",
 			"*",
 			"&",
@@ -807,13 +829,7 @@
 			"uncover_locations",
 			"preface_pictures",
 			"background_picture",
-			"step",
-			"很久很久以前，世界是一片无边无际的森林。",
-			"很久很久以前，世界是一片无边无际的森林。\n那时候，人们对树心怀敬畏。\n在他们心中，树是过去，是未来，是勇气和智慧。\n那时候，人们能够听到树的声音。\n每棵树都有自己的故事，这些故事在悠长的岁月里同树一起慢慢生长。\n那时候，这些世世代代生活在森林的人们，称自己为森林之子。\n\n每一个森林之子在十六岁的那一天，都会接受整个家族为其举办的成年仪式。\n这一天之后，那个他们了如指掌的森林会变成另外一个样子。\n族长在仪式上吟唱的古老歌谣将开启他们心中通向森林的窗口。\n曾经隐藏在虫鸣鸟啼中，隐藏在风和阳光中的树的声音会透过这个窗口，印在他们心上。\n",
-			"\n",
-			"很久很久以前，世界是一片无边无际的森林。\n那时候，人们对树心怀敬畏。\n在他们心中，树是过去，是未来，是勇气和智慧。\n那时候，人们能够听到树的声音。",
-			"[]",
-			"survivedtext"
+			"step"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -840,7 +856,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -848,15 +864,15 @@
 					"file": "_posts/gen_blank_post.py",
 					"settings":
 					{
-						"buffer_size": 841,
+						"buffer_size": 849,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								234,
-								234
+								350,
+								350
 							]
 						],
 						"settings":
@@ -1113,15 +1129,15 @@
 					"file": "_posts/gen_post.py",
 					"settings":
 					{
-						"buffer_size": 1338,
+						"buffer_size": 1298,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								339,
-								339
+								165,
+								216
 							]
 						],
 						"settings":
@@ -1176,6 +1192,109 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
 							"csslint_options":
 							{
 								"adjoining-classes": "warning",
@@ -1237,6 +1356,7 @@
 							[
 							],
 							"pyflakes_ignore_import_*": true,
+							"sublime_auto_complete": true,
 							"sublimelinter": true,
 							"sublimelinter_delay": 2.0,
 							"sublimelinter_disable":
@@ -1265,6 +1385,271 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/2015-07-03-Evaluate-Openstack-Swift-Data-Distributing-Approach.md",
+					"settings":
+					{
+						"buffer_size": 4803,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4184,
+								4184
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2.0,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5.0,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10.0,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"parser": "Github Flavored Markdown",
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/sublime-markdown-extended/Syntaxes/Markdown Extended.tmLanguage",
+							"target": "disk"
+						},
+						"translation.x": 0.0,
+						"translation.y": 2547.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1647,7 +2032,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 242.0,
 	"status_bar_visible": true
 }

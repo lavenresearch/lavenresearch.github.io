@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpost
 category : memory
 tagline: ""
 tags : [latency,ramcloud,summary]

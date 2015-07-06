@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpost
 category : Research
 tagline: ""
 tags : [method]

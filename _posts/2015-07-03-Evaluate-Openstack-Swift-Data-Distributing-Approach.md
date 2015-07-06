@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpost
 category : Openstack
 tagline: ""
 tags : [cloud computing,swift,object storage,openstack]

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpost
 category : Streaming
 tagline: " "
 tags : [stream processing,real time,introduction,cloud computing]

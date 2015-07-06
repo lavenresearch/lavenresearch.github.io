@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: hpost
 category : Streaming
 tagline: ""
 tags : [stream,real time,deploy,install,usage,storm]
@@ -41,7 +41,7 @@ PS：
 2. zookeeper-path/bin//zkServer.sh start zookeeper-path/conf/zoo_sample.cfg
 
 ##### Storm 的依赖库
-1. git libtool libuuid-devel gcc-c++ make 
+1. git libtool libuuid-devel gcc-c++ make
 
 ##### ZeroMQ
 

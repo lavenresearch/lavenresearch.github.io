@@ -17,7 +17,7 @@ else:
     source_file = "CONCLUSION@ " + name + ".md"
 
 content = '''---
-layout: post
+layout: hpost
 category : memory
 tagline: ""
 tags : [iteration , big-data]

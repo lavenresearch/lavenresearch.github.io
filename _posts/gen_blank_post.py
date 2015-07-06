@@ -10,7 +10,7 @@ tags = "cloud computing","swift","object storage","openstack"
 # end
 
 content = '''---
-layout: post
+layout: hpost
 '''
 content += "category : " + category
 content += '''
