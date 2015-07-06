@@ -3,7 +3,7 @@ import time
 
 # basic information start
 
-name = "Evaluate Openstack Swift Data Distributing Approach"
+name = "Install Openstack Swift on Ubuntu 14.04"
 category = "Openstack"
 tags = "cloud computing","swift","object storage","openstack"
 
