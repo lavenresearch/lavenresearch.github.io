@@ -436,9 +436,11 @@ Swift Proxy Server 可以被部署在任意一台机器上，这里将其部署�
     chown -R swift:swift /etc/swift
     swift-init all start
 
+### Swift Client
+
 @swift-aa
 
-验证 Swift 安装结果。
+安装 Swift 客户端，验证 Swift 安装结果。
 
     apt-get install swift python-swiftclient python-keystoneclient
     vim aa-openrc.sh
