@@ -1,6 +1,6 @@
 ---
 layout: hpage
-title: Hello Ideas!
+title: Home
 tagline: Laven Research
 ---
 {% include JB/setup %}
