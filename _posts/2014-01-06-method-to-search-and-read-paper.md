@@ -7,6 +7,7 @@ tags : [method , efficiency]
 {% include JB/setup %}
 
 ## 找论文
+
     1. 使用搜索引擎搜索
         - 了解相关领域的术语，关键字。
         - 掌握搜索引擎使用技术。
@@ -32,6 +33,7 @@ tags : [method , efficiency]
         - sometimes Wikipedia
 
 ## 读论文
+
     读论文前：
         1. 确定读论文的目的(需要得到什么信息)
         2. 预测所需信息在论文中的位置
@@ -80,5 +82,6 @@ tags : [method , efficiency]
         3. 与曾经读过的类似文献进行对比，综合考虑谁说的更有道理
 
 ## 参考文献
+
 http://www.cs.jhu.edu/~jason/advice/how-to-read-a-paper.html
 

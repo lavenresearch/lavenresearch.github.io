@@ -50,14 +50,14 @@ Rings 共分为三种 Account Ring, Container Ring, Object Ring。其中 Object 
 
 Ring 的创建及管理通过 ring-builder 命令实现，该命令需要人工执行。下面命令的功能为:创建ring，向ring中添加device，进行partitions到devices的分配。
 
-```sh
+~~~bash
 swift-ring-builder account.builder create 18 3 1
 swift-ring-builder account.builder add z1-192.168.1.50:6002/sdc 100
 swift-ring-builder account.builder add z2-192.168.1.51:6002/sdc 100
 swift-ring-builder account.builder add z3-192.168.1.52:6002/sdc 100
 swift-ring-builder account.builder add z4-192.168.1.54:6002/sdc 100
 swift-ring-builder account.builder rebalance
-```
+~~~
 
 ring-builder 会把将来建立重建ring需要的信息保存在自己的builder文件里。如果该文件丢失，相当于让ring-builder从头开始创建一个新的ring，这意味着，重排所有partitions到devices的映射，因此将有大量的数据被迁移到新的devices上（数据在迁移完成前是无法被访问的）。
 

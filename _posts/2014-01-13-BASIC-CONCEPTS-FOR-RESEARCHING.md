@@ -7,7 +7,9 @@ tags : [method]
 {% include JB/setup %}
 
 BASIC CONCEPTS FOR RESEARCHING
+
 ## SPEEDUP
+
 在并行计算中，SPEEDUP是指，任务顺序执行时间是并行执行时间的多少倍。
 
 > Speedup is defined by the following formula:
@@ -20,6 +22,7 @@ BASIC CONCEPTS FOR RESEARCHING
 在论文 PACMan（NDSI'12） 中 SPEEDUP 的意义是：内存cache命中时，task执行的时间是内存不命中时其执行的时间的倍数。（正好和上面定义成倒数关系）
 
 ## CDF
+
 > In probability theory and statistics, the cumulative distribution function (CDF), or just distribution function, describes the probability that a real-valued random variable X with a given probability distribution will be found at a value less than or equal to x. In the case of a continuous distribution, it gives the area under the probability density function from minus infinity to x.
 
 CDF是一个函数: f(x) = P(X<=x)
@@ -41,10 +44,13 @@ CDF的一个性质： P(a < X <= b) = f(b) - f(a)
 这个性质在PACMan例子中的意义为： a < access counts <= b 的 blocks 在所有 blocks中占的比例。
 
 ## MEDIAN & PERCENTILE
+
 MEDIAN
+
 > In statistics and probability theory, the median is the numerical value separating the higher half of a data sample, a population, or a probability distribution, from the lower half. The median of a finite list of numbers can be found by arranging all the observations from lowest value to highest value and picking the middle one (e.g., the median of {3, 3, 5, 9, 11} is 5). If there is an even number of observations, then there is no single middle value; the median is then usually defined to be the mean of the two middle values (the median of {3, 5, 7, 9} is (5 + 7) / 2 = 6), which corresponds to interpreting the median as the fully trimmed mid-range.
 
 PERCENTILE
+
 > A percentile (or a centile) is a measure used in statistics indicating the value below which a given percentage of observations in a group of observations fall. For example, the 20th percentile is the value (or score) below which 20 percent of the observations may be found.
 
 MEDIAN is 50th PERCENTILE.
@@ -54,7 +60,9 @@ MEDIAN 意味着在一组数字中，有50%的数字小于MEDIAN，并且有50%�
     如果已知一组数字的 MEDIAN 和 95th PERCENTILE， 意味着这组数字中有 45% 的数字在区间 (median , 95th percentile) 中，若这两个值比较接近，那么区间长度比较小，这一部分数字的分布就比较紧密，反之，其分布就比较稀疏。
 
 ## NETWORK LATENCY & THROUGHPUT & BANDWIDTH
+
 LATENCY
+
 >  In a network, latency, a synonym for delay, is an expression of how much time it takes for a packet of data to get from one designated point to another. In some usages , latency is measured by sending a packet that is returned to the sender and the round-trip time is considered the latency.
 > The latency assumption seems to be that data should be transmitted instantly between one point and another (that is, with no delay at all). The contributors to network latency include:
 > - Propagation: This is simply the time it takes for a packet to travel between one place and another at the speed of light.
@@ -63,9 +71,11 @@ LATENCY
 > - Other computer and storage delays: Within networks at each end of the journey, a packet may be subject to storage and hard disk access delays at intermediate devices such as switches and bridges. (In backbone statistics, however, this kind of latency is probably not considered.)
 
 BANDWIDTH
+
 > Commonly measured in bits/second is the maximum rate that information can be transferred.
 
 THROUGHPUT
+
 > The actual rate that information is transferred.
 > Throughput is the number of messages successfully delivered per unit time. Throughput is controlled by available bandwidth, as well as the available signal-to-noise ratio and hardware limitations.
 

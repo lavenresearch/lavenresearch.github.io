@@ -7,14 +7,20 @@ tags : [stream,real time,deploy,install,usage,storm]
 {% include JB/setup %}
 
 20140527
+
 # 使用中的问题
+
 1. 无法设置全局变量，及多个bolts之间无法共享状态。在这里，由于需要对阈值进行训练，因此，bottleneckLocatingBolt能够修改CmpAverageBolt中的阈值，不知怎样实现。
 2. 未试验是否能够在topology中加入环。即使CmpAverageBolt能够接收BottleneckLocatingBolt的tuples。If you implement a bolt that subscribes to multiple input sources, you can find out which component the Tuple came from by using the Tuple#getSourceComponent method.
 
 # Storm 的部署及使用
+
 ## Storm程序执行环境部署
+
 ### 准备工作
+
 #### 安装JAVA
+
 从Oracle的网站上下载[Java SE 6](http://www.oracle.com/technetwork/java/javasebusiness/downloads/java-archive-downloads-javase6-419409.html)。下载Java的历史版本需要注册Oracle账号。
 
 Java环境的安装过程如下：
@@ -34,13 +40,16 @@ PS：
 2. 在SUSE下，永久保存环境变量的方法是，在 /etc 下建立 profile.local 文件，写入上述环境变量相关的命令。
 
 #### 其他软件
+
 ##### ZooKeeper
+
 安装并运行：
 
 1. 下载并解压zookeeper源码包
 2. zookeeper-path/bin//zkServer.sh start zookeeper-path/conf/zoo_sample.cfg
 
 ##### Storm 的依赖库
+
 1. git libtool libuuid-devel gcc-c++ make
 
 ##### ZeroMQ
@@ -62,6 +71,7 @@ PS：
     sudo make install
 
 ### 安装配置使用 Storm
+
 在一套完整的 Storm 系统中，共有四种功能角色：
 
 1. storm nimbus: 负责任务调度和资源分配，通过 zookeeper 集群与 storm supervisor 交互来完成这项功能；
@@ -85,6 +95,7 @@ PS：下文中没有特殊说明操作，表示在所有的storm节点上都要�
     export CLASSPATH
 
 #### 配置 Storm
+
 编辑 /opt/storm-0.7.0/conf/storm.yaml , 加入如下内容：
 
     storm.zookeeper.servers:
@@ -100,6 +111,7 @@ PS：下文中没有特殊说明操作，表示在所有的storm节点上都要�
 3. 在nimbus节点上： nohup storm ui &
 
 #### 执行 Storm 应用程序
+
 在storm client上：
 
     storm jar xxx.jar [class-name(which-contain-main-method)]
@@ -107,6 +119,7 @@ PS：下文中没有特殊说明操作，表示在所有的storm节点上都要�
     storm kill [topology-name]
 
 #### 查看 Storm 运行状态
+
 在浏览器中输入：[运行storm ui服务器的IP地址]:8080
 
 ## Storm 开发环境的部署
