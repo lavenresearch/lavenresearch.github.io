@@ -125,13 +125,13 @@ Replication processes 会将本地的数据与远端的数据副本进行对比�
 
     apt-get install ntp
     vim /etc/ntp.conf
-    # server 0.ubuntu.pool.ntp.org iburst
-    # server 1.ubuntu.pool.ntp.org iburst
-    # server 2.ubuntu.pool.ntp.org iburst
-    # server 3.ubuntu.pool.ntp.org iburst
-    # server ntp.ubuntu.com iburst
-    # restrict -4 default kod notrap nomodify nopeer noquery
-    # restrict -6 default kod notrap nomodify nopeer noquery
+        # server 0.ubuntu.pool.ntp.org iburst
+        # server 1.ubuntu.pool.ntp.org iburst
+        # server 2.ubuntu.pool.ntp.org iburst
+        # server 3.ubuntu.pool.ntp.org iburst
+        # server ntp.ubuntu.com iburst
+        # restrict -4 default kod notrap nomodify nopeer noquery
+        # restrict -6 default kod notrap nomodify nopeer noquery
     service ntp restart
 
 @(swift-cc, swift-dd)
@@ -140,7 +140,7 @@ Replication processes 会将本地的数据与远端的数据副本进行对比�
 
     apt-get install ntp
     vim /etc/ntp.conf
-    # server controller iburst
+        # server controller iburst
     service ntp restart
 
 @swift-bb
@@ -169,32 +169,28 @@ Replication processes 会将本地的数据与远端的数据副本进行对比�
 
     apt-get install keystone python-keystoneclient
     vim /etc/keystone/keystone.conf
-
-    # [DEFAULT]
-    # ...
-    # admin_token = 28bfc1d5efc9028539d1
-    # ...
-    # verbose = True
-    # [database]
-    # ...
-    # connection = mysql://keystone:aa@controller/keystone
-    # [token]
-    # ...
-    # provider = keystone.token.providers.uuid.Provider
-    # driver = keystone.token.persistence.backends.sql.# Token
-    # [revoke]
-    # ...
-    # driver = keystone.contrib.revoke.backends.sql.Revoke
-
+        # [DEFAULT]
+        # ...
+        # admin_token = 28bfc1d5efc9028539d1
+        # ...
+        # verbose = True
+        # [database]
+        # ...
+        # connection = mysql://keystone:aa@controller/keystone
+        # [token]
+        # ...
+        # provider = keystone.token.providers.uuid.Provider
+        # driver = keystone.token.persistence.backends.sql.# Token
+        # [revoke]
+        # ...
+        # driver = keystone.contrib.revoke.backends.sql.Revoke
     su -s /bin/sh -c "keystone-manage db_sync" keystone
-
-    # commenting "driver = keystone.token.persistence.backends.sql.Token" of the [token] section in the /etc/keystone/keystone.conf file
-
+        # commenting "driver = keystone.token.persistence.backends.sql.Token" of the [token] section in the /etc/keystone/keystone.conf file
     service keystone restart
     rm -f /var/lib/keystone/keystone.db
     (crontab -l -u keystone 2>&1 | grep -q token_flush) || \
-    echo '@hourly /usr/bin/keystone-manage token_flush >/var/log/keystone/keystone-tokenflush.log 2>&1' \
-    >> /var/spool/cron/crontabs/keystone
+        echo '@hourly /usr/bin/keystone-manage token_flush >/var/log/keystone/keystone-tokenflush.log 2>&1' \
+        >> /var/spool/cron/crontabs/keystone
 
 在 keystone 中创建 tenants, users, and roles。
 
@@ -204,25 +200,22 @@ Replication processes 会将本地的数据与远端的数据副本进行对比�
     keystone tenant-create --name admin --description "Admin Tenant"
     keystone user-create --name admin --pass aa --email aa@aa.aa
     keystone role-create --name admin
-
     keystone user-role-add --user admin --tenant admin --role admin
-
     keystone tenant-create --name aa --description "Demo Tenant"
     keystone user-create --name aa --tenant aa --pass aa --email aa@aa.aa
-
     keystone tenant-create --name service --description "Service Tenant"
 
 创建 service entity 和 API endpoint。
 
     keystone service-create --name keystone --type identity \
-    --description "OpenStack Identity"
+        --description "OpenStack Identity"
 
     keystone endpoint-create \
-    --service-id $(keystone service-list | awk '/ identity / {print $2}') \
-    --publicurl http://controller:5000/v2.0 \
-    --internalurl http://controller:5000/v2.0 \
-    --adminurl http://controller:35357/v2.0 \
-    --region regionOne
+        --service-id $(keystone service-list | awk '/ identity / {print $2}') \
+        --publicurl http://controller:5000/v2.0 \
+        --internalurl http://controller:5000/v2.0 \
+        --adminurl http://controller:35357/v2.0 \
+        --region regionOne
 
 @swift-aa
 
@@ -231,17 +224,230 @@ Replication processes 会将本地的数据与远端的数据副本进行对比�
     unset OS_SERVICE_TOKEN OS_SERVICE_ENDPOINT
 
     keystone --os-tenant-name admin --os-username admin --os-password aa \
-    --os-auth-url http://controller:35357/v2.0 token-get
+        --os-auth-url http://controller:35357/v2.0 token-get
     keystone --os-tenant-name admin --os-username admin --os-password aa \
-    --os-auth-url http://controller:35357/v2.0 tenant-list
+        --os-auth-url http://controller:35357/v2.0 tenant-list
     keystone --os-tenant-name admin --os-username admin --os-password aa \
-    --os-auth-url http://controller:35357/v2.0 user-list
+        --os-auth-url http://controller:35357/v2.0 user-list
     keystone --os-tenant-name admin --os-username admin --os-password aa \
-    --os-auth-url http://controller:35357/v2.0 role-list
+        --os-auth-url http://controller:35357/v2.0 role-list
     keystone --os-tenant-name demo --os-username aa --os-password aa \
-    --os-auth-url http://controller:35357/v2.0 token-get
+        --os-auth-url http://controller:35357/v2.0 token-get
     keystone --os-tenant-name demo --os-username aa --os-password aa \
-    --os-auth-url http://controller:35357/v2.0 user-list
+        --os-auth-url http://controller:35357/v2.0 user-list
 
+### Swift Proxy Server
 
+Swift Proxy Server 可以被部署在任意一台机器上，这里将其部署在 Controller Node（swift-bb）上。
 
+@swift-bb
+
+认证相关的设置。
+
+    keystone user-create --name swift --pass aa
+    keystone user-role-add --user swift --tenant service --role admin
+    keystone service-create --name swift --type object-store \
+        --description "OpenStack Object Storage"
+    keystone endpoint-create \
+        --service-id $(keystone service-list | awk '/ object-store / {print $2}') \
+        --publicurl 'http://controller:8080/v1/AUTH_%(tenant_id)s' \
+        --internalurl 'http://controller:8080/v1/AUTH_%(tenant_id)s' \
+        --adminurl http://controller:8080 \
+        --region regionOne
+
+安装所需服务。[proxy-server.conf](/recource/swiftConfFiles/swift-bb/proxy-server.conf)
+
+    apt-get install swift swift-proxy python-swiftclient python-keystoneclient memcached
+    mkdir /etc/swift
+    curl -o /etc/swift/proxy-server.conf \
+        https://raw.githubusercontent.com/openstack/swift/stable/juno/etc/proxy-server.conf-sample
+    vim /etc/swift/proxy-server.conf
+        # [DEFAULT]
+        # bind_port = 8080
+        # user = swift
+        # swift_dir = /etc/swift
+
+        # [pipeline:main]
+        # pipeline = authtoken cache healthcheck keystoneauth proxy-logging proxy-server
+
+        # [app:proxy-server]
+        # allow_account_management = true
+        # account_autocreate = true
+
+        # [filter:keystoneauth]
+        # use = egg:swift#keystoneauth
+        # operator_roles = admin,_member_
+
+        # [filter:authtoken]
+        # paste.filter_factory = keystonemiddleware.auth_token:filter_factory
+        # auth_uri = http://controller:5000/v2.0
+        # identity_uri = http://controller:35357
+        # admin_tenant_name = service
+        # admin_user = swift
+        # admin_password = aa
+        # delay_auth_decision = true
+
+        # [filter:cache]
+        # memcache_servers = 127.0.0.1:11211
+
+### Swift Storage Nodes
+
+@(swift-cc, swift-dd)
+
+配置基本环境。[fstab@swift-cc](/recource/swiftConfFiles/swift-cc/fstab), [fstab@swift-dd](/recource/swiftConfFiles/swift-dd/fstab), [rsyncd.conf@swift-cc](/recource/swiftConfFiles/swift-cc/rsyncd.conf), [rsyncd.conf@swift-dd](/recource/swiftConfFiles/swift-dd/rsyncd.conf)
+
+    apt-get install xfsprogs rsync
+    mkfs.xfs /dev/loop0
+    mkfs.xfs /dev/loop1
+    mkdir -p /srv/node/loop0
+    mkdir -p /srv/node/loop1
+    vim /etc/fstab
+        # /dev/loop0 /srv/node/loop0 xfs noatime,nodiratime,nobarrier,logbufs=8 0 2
+        # /dev/loop1 /srv/node/loop1 xfs noatime,nodiratime,nobarrier,logbufs=8 0 2
+    mount /srv/node/loop0
+    mount /srv/node/loop1
+
+    vim /etc/rsyncd.conf
+        # Replace MANAGEMENT_INTERFACE_IP_ADDRESS with the IP address of the management network on the storage node.
+        # uid = swift
+        # gid = swift
+        # log file = /var/log/rsyncd.log
+        # pid file = /var/run/rsyncd.pid
+        # address = MANAGEMENT_INTERFACE_IP_ADDRESS
+        # [account]
+        # max connections = 2
+        # path = /srv/node/
+        # read only = false
+        # lock file = /var/lock/account.lock
+        # [container]
+        # max connections = 2
+        # path = /srv/node/
+        # read only = false
+        # lock file = /var/lock/container.lock
+        # [object]
+        # max connections = 2
+        # path = /srv/node/
+        # read only = false
+        # lock file = /var/lock/object.lock
+    vim /etc/default/rsync
+        # RSYNC_ENABLE=true
+    service rsync start
+
+安装所需服务。[account-server.conf@swift-cc](/recource/swiftConfFiles/swift-cc/account-server.conf), [account-server.conf@swift-dd](/recource/swiftConfFiles/swift-dd/account-server.conf), [container-server.conf@swift-cc](/recource/swiftConfFiles/swift-cc/container-server.conf), [container-server.conf@swift-dd](/recource/swiftConfFiles/swift-dd/container-server.conf), [object-server.conf@swift-cc](/recource/swiftConfFiles/swift-cc/object-server.conf), [object-server.conf@swift-dd](/recource/swiftConfFiles/swift-dd/object-server.conf)
+
+    apt-get install swift swift-account swift-container swift-object
+    curl -o /etc/swift/account-server.conf \
+        https://raw.githubusercontent.com/openstack/swift/stable/juno/etc/account-server.conf-sample
+    curl -o /etc/swift/container-server.conf \
+        https://raw.githubusercontent.com/openstack/swift/stable/juno/etc/container-server.conf-sample
+    curl -o /etc/swift/object-server.conf \
+        https://raw.githubusercontent.com/openstack/swift/stable/juno/etc/object-server.conf-sample
+    vim /etc/swift/account-server.conf
+        # [DEFAULT]
+        # bind_ip = MANAGEMENT_INTERFACE_IP_ADDRESS
+        # bind_port = 6002
+        # user = swift
+        # swift_dir = /etc/swift
+        # devices = /srv/node
+        # [pipeline:main]
+        # pipeline = healthcheck recon account-server
+        # [filter:recon]
+        # recon_cache_path = /var/cache/swift
+    vim /etc/swift/container-server.conf
+        # [DEFAULT]
+        # bind_ip = MANAGEMENT_INTERFACE_IP_ADDRESS
+        # bind_port = 6001
+        # user = swift
+        # swift_dir = /etc/swift
+        # devices = /srv/node
+        # [pipeline:main]
+        # pipeline = healthcheck recon container-server
+        # [filter:recon]
+        # recon_cache_path = /var/cache/swift
+    vim /etc/swift/object-server.conf
+        # [DEFAULT]
+        # bind_ip = MANAGEMENT_INTERFACE_IP_ADDRESS
+        # bind_port = 6000
+        # user = swift
+        # swift_dir = /etc/swift
+        # devices = /srv/node
+        # [pipeline:main]
+        # pipeline = healthcheck recon object-server
+        # [filter:recon]
+        # recon_cache_path = /var/cache/swift
+    chown -R swift:swift /srv/node
+    mkdir -p /var/cache/swift
+    chown -R swift:swift /var/cache/swift
+
+@swift-bb
+
+创建 Rings。
+
+    cd /etc/swift
+
+    swift-ring-builder account.builder create 10 3 1
+    swift-ring-builder account.builder add r1z1-192.168.245.132:6002/loop0 100
+    swift-ring-builder account.builder add r1z1-192.168.245.132:6002/loop1 100
+    swift-ring-builder account.builder add r1z1-192.168.245.133:6002/loop0 100
+    swift-ring-builder account.builder add r1z1-192.168.245.133:6002/loop1 100
+    swift-ring-builder account.builder rebalance
+
+    swift-ring-builder container.builder create 10 3 1
+    swift-ring-builder container.builder add r1z1-192.168.245.132:6002/loop0 100
+    swift-ring-builder container.builder add r1z1-192.168.245.132:6002/loop1 100
+    swift-ring-builder container.builder add r1z1-192.168.245.133:6002/loop0 100
+    swift-ring-builder container.builder add r1z1-192.168.245.133:6002/loop1 100
+    swift-ring-builder container.builder rebalance
+
+    swift-ring-builder object.builder create 10 3 1
+    swift-ring-builder object.builder add r1z1-192.168.245.132:6002/loop0 100
+    swift-ring-builder object.builder add r1z1-192.168.245.132:6002/loop1 100
+    swift-ring-builder object.builder add r1z1-192.168.245.133:6002/loop0 100
+    swift-ring-builder object.builder add r1z1-192.168.245.133:6002/loop1 100
+    swift-ring-builder object.builder rebalance
+
+    scp *.ring.gz 192.168.245.132:/etc/swift
+    scp *.ring.gz 192.168.245.133:/etc/swift
+
+配置 hash 和 storage policy。
+
+    curl -o /etc/swift/swift.conf \
+        https://raw.githubusercontent.com/openstack/swift/stable/juno/etc/swift.conf-sample
+    vim /etc/swift/swift.conf
+        # [swift-hash]
+        # swift_hash_path_suffix = HASH_PATH_PREFIX
+        # swift_hash_path_prefix = HASH_PATH_SUFFIX
+        # [storage-policy:0]
+        # name = Policy-0
+        # default = yes
+    scp /etc/swift/swift.conf 192.168.245.132:/etc/swift/
+    scp /etc/swift/swift.conf 192.168.245.133:/etc/swift/
+
+启动 Swift Proxy Server 服务。
+
+    chown -R swift:swift /etc/swift
+    service memcached restart
+    service swift-proxy restart
+
+@(swift-cc, swift-dd)
+
+启动 Swift 存储端服务。
+
+    chown -R swift:swift /etc/swift
+    swift-init all start
+
+@swift-aa
+
+验证 Swift 安装结果。
+
+    apt-get install swift python-swiftclient python-keystoneclient
+    vim aa-openrc.sh
+        # export OS_TENANT_NAME=aa
+        # export OS_USERNAME=aa
+        # export OS_PASSWORD=aa
+        # export OS_AUTH_URL=http://controller:5000/v2.0
+    source aa-openrc.sh
+    swift stat
+    swift upload aa-container1 FILE
+    swift list
+    swift download aa-container1 FILE
