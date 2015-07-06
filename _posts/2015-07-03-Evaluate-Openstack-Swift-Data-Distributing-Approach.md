@@ -50,7 +50,7 @@ Rings 共分为三种 Account Ring, Container Ring, Object Ring。其中 Object 
 
 Ring 的创建及管理通过 ring-builder 命令实现，该命令需要人工执行。下面命令的功能为:创建ring，向ring中添加device，进行partitions到devices的分配。
 
-```shell
+```sh
 swift-ring-builder account.builder create 18 3 1
 swift-ring-builder account.builder add z1-192.168.1.50:6002/sdc 100
 swift-ring-builder account.builder add z2-192.168.1.51:6002/sdc 100
