@@ -3,9 +3,9 @@ import time
 
 # basic information start
 
-name = "Install Openstack Swift on Ubuntu 14.04"
-category = "Openstack"
-tags = "cloud computing","swift","object storage","openstack"
+name = "An Overview for Storage System"
+category = "Storage"
+tags = "distributed storage system","GFS","object storage","file system","key value store"
 
 # end
 
