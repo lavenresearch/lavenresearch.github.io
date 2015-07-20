@@ -95,4 +95,10 @@ Reliability ：指发生失效的概率。
 
 Availability 和 Reliability 之间的差距在于，当失效发生后，应用或者服务恢复正常所需要的时间。当这个时间很长时，即使 Reliability 很高（失效很少发生），其 Availability 也可能会比较低，反之亦然。
 
+## Zipf's law
+
+> Zipf's law in fact refers more generally to frequency distributions of "rank data," in which the relative frequency of the nth-ranked item is given by the Zeta distribution, 1/(n^s*ζ(s)), where the parameter s > 1 indexes the members of this family of probability distributions. Indeed, Zipf's law is sometimes synonymous with "zeta distribution," since probability distributions are sometimes called "laws". This distribution is sometimes called the Zipfian or Yule distribution.
+
+Zipf's coefficient 用于描述 Zipf 的情况。其特点是，当使用指数坐标轴（x-axis, y-axis）时，图像呈现为斜率小于零的直线。
+
 
