@@ -12,9 +12,9 @@ tags : [distributed storage system,GFS,object storage,file system,key value stor
 
 授课教师 ： [江松](http://www.ece.eng.wayne.edu/~sjiang/) Wayne State University
 
-课程内容 ： [Local File System]("/docs/Lecture1-localFS.pdf"), [Distributed File System]("/docs/Lecture2-DFS.pdf"), [Key-Value Store]("/docs/Lecture3-KV.pdf")
+课程内容 ： [Local File System](/docs/Lecture1-localFS.pdf), [Distributed File System](/docs/Lecture2-DFS.pdf), [Key-Value Store](/docs/Lecture3-KV.pdf)
 
-参考资料 ： [Operating Systems Three Easy Pieces]("/docs/Operating Systems Three Easy Pieces.pdf")
+参考资料 ： [Operating Systems Three Easy Pieces](/docs/Operating Systems Three Easy Pieces.pdf)
 
 1. File Systems
 1.1 Files and directories
