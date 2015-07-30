@@ -88,7 +88,7 @@ if __name__ == "__main__":
 
 值得注意的是，脚本 swift 中， 调用 swiftclient.shell.main 函数时没有给其传递参数。而实际上 swift 正常执行是需要参数的。swiftclient.shell.main 的实现如下：
 
-```python
+~~~python
 from sys import argv as sys_argv
 def main(arguments=None):
     if arguments:
@@ -96,7 +96,7 @@ def main(arguments=None):
     else:
         argv = sys_argv
     ......
-```
+~~~
 
 这样做的原因可能是因为，setuptools 并不能解析出函数调用的参数，因此自动生成脚本时只能使用无参调用。所以要在 main 函数里显式处理系统输入。而在 swiftclient 被当作是库使用的时候 main 函数会被有参调用。
 
