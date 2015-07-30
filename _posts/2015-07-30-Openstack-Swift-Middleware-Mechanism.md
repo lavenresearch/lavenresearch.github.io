@@ -160,6 +160,73 @@ WSGI_server(
     )
 ~~~
 
-## 启用 Middleware
+## 实现 middleware
 
-## 配置 Middleware
+对于 Swift 来说，只要知道它需要调用的符合规范的 middleware 的函数的位置，就可以使用这个 middleware 了。告诉 Swift 的方法就是在 setup.py 中添加相应的 entry_points。一个完整的 setup.py 的例子如下：
+
+~~~python
+from setuptools import setup,find_packages
+
+setup(
+    name = "mystandalonemw",
+    version = "1.0",
+    packages = ['mystandalonemw',],
+    entry_points = {'paste.filter_factory':['mystandalonemw = mystandalonemw.mystandalonemw:filter_factory',],}
+)
+~~~
+
+其中，‘paste.filter_factory'指定这个entry_points的类型，即，用于哪一个可扩展应用或框架，这里是 paste, 因为 Swift 使用 paste 来管理这些东西。等号前面的“mystandalonemw”是一个 entry_point 的标识，在使用的时候，通过这个来指定，使用这个包里的这个 entry_point。等号后面的内容用于指定这个 entry_point 对应的函数。
+
+执行了`python setup.py install`之后，这个包对应的 egg 文件会被放到 python 相应的 site-packages 目录里，并且这个包的文件名也被会加入到 easy-install.pth 文件中以进行索引（egg文件的路径和文件名只有被加入到这个文件内才可以被 python 找到）。setup.py 中设定的 entry_points 信息被保存在 egg 文件里的 `EGG-INFO/entry_points.txt` 中。 `EGG-INFO/entry_points.txt` 的内容为：
+
+~~~ini
+[paste.filter_factory]
+mystandalonemw = mystandalonemw.mystandalonemw:filter_factory
+~~~
+
+Paste 就是用这部分的信息定位实际需要调用的函数。
+
+## 使用 middleware
+
+在 Swift 中使用 middleware 需要在 proxy-server.conf 进行配置。主要有两步：
+
+- 在 pipeline 中增加 mystandalonemw
+- 配置 mystandalonemw
+
+proxy-server.conf 中相关的配置如下，其中 mystandalonemw#mystandalonemw 分别对应于包的名字和 entry_point 的名字。myconf 为属于 mystandalonemw 的配置信息。在具体的函数中这个配置为字典的形式。
+
+~~~ini
+[pipeline:main]
+pipeline = catch_errors gatekeeper healthcheck proxy-logging mystandalonemw proxy-server
+
+[filter:mystandalonemw]
+use = egg:mystandalonemw#mystandalonemw
+myconf = latency is 1000ms
+~~~
+
+使用配置的方法：
+
+~~~python
+import os
+import time
+from swift.common.swob import Request, Response
+
+class mystandalonemw(object):
+    def __init__(self, app, conf):
+        self.app = app
+        self.conf = conf
+    def __call__(self, env, start_response):
+        req = Request(env)
+        f = open("/home/suyi/mymiddle"+str(time.time()),"w")
+        f.write("\n"+str(req)+"\n"+str(env)+"\n"+str(self.conf))
+        f.close()
+        print self.conf.get("myconf")
+        return self.app(env, start_response)
+
+def filter_factory(global_conf, **local_conf):
+    conf = global_conf.copy()
+    conf.update(local_conf)
+    def mystandalonemw_filter(app):
+        return mystandalonemw(app, conf)
+    return mystandalonemw_filter
+~~~
