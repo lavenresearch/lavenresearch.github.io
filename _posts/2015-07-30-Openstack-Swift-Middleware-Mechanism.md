@@ -6,7 +6,7 @@ tags : [openstack,Swift,object storage,python,key value store,swift middleware]
 ---
 {% include JB/setup %}
 
-# Openstack Swift Middleware Mechanism :pray:
+# Openstack Swift Middleware Mechanism
 
 2015/7/30 13:27:13
 
