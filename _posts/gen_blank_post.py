@@ -3,9 +3,9 @@ import time
 
 # basic information start
 
-name = "An Overview for Storage System"
-category = "Storage"
-tags = "distributed storage system","GFS","object storage","file system","key value store"
+name = "Openstack Swift Middleware Mechanism"
+category = "Openstack"
+tags = "openstack","Swift","object storage","python","key value store","swift middleware"
 
 # end
 

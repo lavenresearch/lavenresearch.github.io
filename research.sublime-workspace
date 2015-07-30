@@ -147,6 +147,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "_posts/2015-07-19-An-Overview-for-Storage-System-part1-(Mapping).md",
+			"settings":
+			{
+				"buffer_size": 2560,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -532,6 +540,8 @@
 	},
 	"file_history":
 	[
+		"/D/project/github/lavenresearch.github.io/_posts/2015-07-19-An-Overview-for-Storage-System.md",
+		"/D/project/706项目/测试结果/20150401/pnfsThroughput.py",
 		"/D/project/github/lavenresearch.github.io/_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md",
 		"/D/project/github/lavenresearch.github.io/_layouts/hdefault.html",
 		"/D/project/github/lavenresearch.github.io/_posts/2015-07-06-Install-Openstack-Swift-on-Ubuntu-14.04.md",
@@ -657,9 +667,7 @@
 		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/Pylinter/README.rst",
 		"/D/books/life/text/iriver_cover_story/english_novels/a_song_of_ice_and_fire/George R. R. Martin - [A SONG OF ICE AND FIRE 01] - A Game Of Thrones (v5.0).epub",
 		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/world in my eyes/PyGame/game.py",
-		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/pnfs_nfsv4_1_file_layout_intro/pnfs_nfsv4_1_file_layout_intro.aux",
-		"/D/Dropbox/template/project_report_template.tex",
-		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/pnfs_operations_intro/pnfs_operations_intro.tex"
+		"/D/Dropbox/configurations/_emacs_laven/laven_blog/source/todo_list/pnfs_nfsv4_1_file_layout_intro/pnfs_nfsv4_1_file_layout_intro.aux"
 	],
 	"find":
 	{
@@ -678,6 +686,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"..",
 			"OS_USERNAME",
 			"OS_AUTH_URL",
 			"container",
@@ -804,8 +813,7 @@
 			"3",
 			"text",
 			"outline",
-			"dairy",
-			"stories"
+			"dairy"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -832,8 +840,168 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "_posts/2015-07-19-An-Overview-for-Storage-System-part1-(Mapping).md",
+					"settings":
+					{
+						"buffer_size": 2560,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								166,
+								166
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/sublime-markdown-extended/Syntaxes/Markdown Extended.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -898,6 +1066,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"over",
+				"_posts/2015-07-19-An-Overview-for-Storage-System.md"
+			],
 			[
 				"hde",
 				"_layouts/hdefault.html"
@@ -1176,7 +1348,7 @@
 		[
 			[
 				"",
-				"/D/project/github/reading/reading.sublime-project"
+				"/D/Dropbox/bb/research/03.ThirdPaper/thirdPaper.sublime-project"
 			],
 			[
 				"p",
