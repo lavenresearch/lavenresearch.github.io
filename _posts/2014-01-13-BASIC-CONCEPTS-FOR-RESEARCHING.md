@@ -21,7 +21,7 @@ BASIC CONCEPTS FOR RESEARCHING
 
 在论文 PACMan（NDSI'12） 中 SPEEDUP 的意义是：内存cache命中时，task执行的时间是内存不命中时其执行的时间的倍数。（正好和上面定义成倒数关系）
 
-## CDF
+## CDF and CCDF
 
 > In probability theory and statistics, the cumulative distribution function (CDF), or just distribution function, describes the probability that a real-valued random variable X with a given probability distribution will be found at a value less than or equal to x. In the case of a continuous distribution, it gives the area under the probability density function from minus infinity to x.
 
@@ -42,6 +42,12 @@ f(x)的值为随机变量 X 的值不大于 x 的概率。
 CDF的一个性质： P(a < X <= b) = f(b) - f(a)
 因此从CDF的图上可以很容易的看出 x 在某一区间内随机事件发生的概率。
 这个性质在PACMan例子中的意义为： a < access counts <= b 的 blocks 在所有 blocks中占的比例。
+
+CCDF和CDF不同的地方在于：f(x) = P(X>=x)
+
+已论文 Tales of the Tail: Hardware, OS, and Application-level Sources of Tail Latency 中的 figure 1 为例。
+
+> The graph is a complementary cumulative distribution function, and so the point (x,y) on the graph implies that y is the fraction of requests that experience a latency of at least x µ s. This style of graph helps when visualizing latency tails, as Y-axis labels correspond to the 0th,90th,99th,99.9th (and soon) percentile latency.
 
 ## MEDIAN & PERCENTILE
 
