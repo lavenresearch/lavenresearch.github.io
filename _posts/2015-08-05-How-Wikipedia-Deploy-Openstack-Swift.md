@@ -93,9 +93,11 @@ $wmfSwiftBigWikis = array( # DO NOT change without proper migration first
 
 > Pasted from: https://wikitech.wikimedia.org/wiki/Media_storage
 
-## thumbnail image 请求的处理流程（TODO 将该过程画成图）
+## thumbnail image 请求的处理流程
 
 First request for a thumbnail image
+
+![](/images/Thumbnail-stack.svg)
 
 - Request for http://upload.wikimedia.org/project/language/thumb/x/xy/filename.ext/NNNpx-filename.ext is received by an LVS server.
 - The LVS server picks an arbitrary Varnish frontend server to handle the request.
