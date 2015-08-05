@@ -12,7 +12,9 @@ tags : [openstack,Swift,object storage,wikipedia,production deployment,use cases
 
 - [Scaling media storage at Wikimedia with Swift](http://blog.wikimedia.org/2012/02/09/scaling-media-storage-at-wikimedia-with-swift/), [__wikitech: Media Storage__](https://wikitech.wikimedia.org/wiki/Media_storage), [wikitech: swift](https://wikitech.wikimedia.org/wiki/Swift), [wikitech: Category Swift](https://wikitech.wikimedia.org/wiki/Category:Swift), [wikitech: Ceph](https://wikitech.wikimedia.org/wiki/Ceph)
 
-查看源代码：[Wikimeida NOC](https://noc.wikimedia.org/), [Mediawiki 文件后端存储配置（包括 shard）](https://noc.wikimedia.org/conf/highlight.php?file=filebackend.php), [Github version](https://github.com/wikimedia/operations-mediawiki-config/blob/master/wmf-config/filebackend.php)
+查看源代码：
+
+[Wikimeida NOC](https://noc.wikimedia.org/), [Mediawiki 文件后端存储配置（包括 shard）](https://noc.wikimedia.org/conf/highlight.php?file=filebackend.php), [Github version](https://github.com/wikimedia/operations-mediawiki-config/blob/master/wmf-config/filebackend.php)
 
 Wikipedia 使用 swift 存储所有的多媒体数据，包括图片音频视频文档。其中 scalar 集群负责对图片，视频音频等根据需要进行 resize 或者格式转换。varnish 集群负责数据的cache。
 
