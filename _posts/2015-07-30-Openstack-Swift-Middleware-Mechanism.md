@@ -105,7 +105,7 @@ def main(arguments=None):
 
 Setuptools 支持将打包的程序作为模块插入可扩展的应用或者框架（例如，swift）里。对于这种情况，作为可扩展的应用或框架首先要定义一个“`entry point group`”。而作为模块程序，在 setup.py 中的 entry_points 选项下需要在相应的 `entry point group` 中给出可以被直接调用的函数。
 
-Swift 使用了 paste deploy, `entry point group` 应该是在 paste deploy 中定义的， swift 直接拿过来用了。 Swift 项目的 setup.cfg 中相关的内容为：
+Swift 使用了 paste deploy, `entry point group` 是在 paste deploy 中定义的， swift 直接拿过来用了。 Swift 项目的 setup.cfg 中相关的内容为：
 
 ~~~ini
 [entry_points]
@@ -123,7 +123,7 @@ paste.filter_factory =
     ratelimit = swift.common.middleware.ratelimit:filter_factory
 ~~~
 
-其中 app_factory 和 filter_factory 应该是 paste deploy 中规定的调用接口。proxy server 中定义的 app_factory 和 healthcheck 中定义的 filter_factory 分别为：
+其中 paste.app_factory 和 paste.filter_factory 就是 paste deploy 中定义的 `entry point group`。proxy server 中定义的 app_factory 函数和 healthcheck 中定义的 filter_factory 函数分别为：
 
 ~~~python
 # proxy server
@@ -143,6 +143,8 @@ def filter_factory(global_conf, **local_conf):
         return HealthCheckMiddleware(app, conf)
     return healthcheck_filter
 ~~~
+
+## middlewares 调用关系
 
 app_factory 对应的是整个 WSGI 应用中核心的应用部分，这一部分不再往下调用而直接产生返回值。 filter_factory 对应的是核心部分之上的 wrappers, 即，swift 中的 middleware, 这一部分通过向下调用获取返回值（也可以不向下调用直接返回）。通过读取 proxy server（或者其他 servers）的配置文件中的 pipeline, 按照其中定义的顺序逐层进行调用。调用结构为：
 

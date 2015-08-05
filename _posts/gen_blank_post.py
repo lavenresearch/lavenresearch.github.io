@@ -3,9 +3,9 @@ import time
 
 # basic information start
 
-name = "How Wikipedia Deploy Openstack Swift"
-category = "Openstack"
-tags = "openstack","Swift","object storage","wikipedia","production deployment","use cases"
+name = "An Overview For Storage System Part3(Key Value Store)"
+category = "Storage"
+tags = "distributed storage", "system", "GFS", "object storage", "file system" , "key value store"
 
 # end
 

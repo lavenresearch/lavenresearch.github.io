@@ -536,10 +536,12 @@
 	},
 	"file_history":
 	[
+		"/E/pf/WizNote/My Knowledge/temp/3376236/Openstack Swift 的认证方式.md-3376236.md",
+		"/D/project/github/lavenresearch.github.io/_posts/2015-07-30-Openstack-Swift-Middleware-Mechanism.md",
+		"/D/project/github/lavenresearch.github.io/_posts/2015-08-05-How-Wikipedia-Deploy-Openstack-Swift.md",
+		"/D/project/github/lavenresearch.github.io/_posts/gen_blank_post.py",
 		"/D/Dropbox/bb/research/03.ThirdPaper/figures/Ganglia   Swift eqiad Cluster Report.html",
 		"/D/project/github/lavenresearch.github.io/_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md",
-		"/D/project/github/lavenresearch.github.io/_posts/2015-07-30-Openstack-Swift-Middleware-Mechanism.md",
-		"/D/project/github/lavenresearch.github.io/_posts/gen_blank_post.py",
 		"/D/project/github/lavenresearch.github.io/_posts/2015-07-19-An-Overview-for-Storage-System-part1-(Mapping).md",
 		"/D/project/github/lavenresearch.github.io/_posts/2015-07-19-An-Overview-for-Storage-System.md",
 		"/D/project/706项目/测试结果/20150401/pnfsThroughput.py",
@@ -661,9 +663,7 @@
 		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SideBarEnhancements/Default (Windows).sublime-keymap",
 		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/SublimeREPL.sublime-settings",
 		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/Default (Windows).sublime-keymap",
-		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/README.markdown",
-		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/Print to HTML.sublime-settings",
-		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/Pylinter/README.rst"
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/README.markdown"
 	],
 	"find":
 	{
@@ -682,6 +682,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\\",
+			"f5",
+			"Ceph",
+			"eqiad",
+			"codsw",
+			"How",
+			"use",
 			"myMiddleware",
 			"mymiddleware",
 			"myMiddleware",
@@ -802,14 +809,7 @@
 			"stylesheets",
 			"./stylesheet",
 			"stylesheet",
-			"./css",
-			"/css",
-			"css",
-			"=\"./",
-			"css",
-			"outline-3",
-			"outline",
-			"<div id=\"outline-container-5-1\" class=\"outline-3\">\n"
+			"./css"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -902,6 +902,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"midd",
+				"_posts/2015-07-30-Openstack-Swift-Middleware-Mechanism.md"
+			],
+			[
+				"wik",
+				"_posts/2015-08-05-How-Wikipedia-Deploy-Openstack-Swift.md"
+			],
+			[
+				"blan",
+				"_posts/gen_blank_post.py"
+			],
 			[
 				"bas",
 				"_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md"
