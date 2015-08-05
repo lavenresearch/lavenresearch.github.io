@@ -3,9 +3,9 @@ import time
 
 # basic information start
 
-name = "Openstack Swift Middleware Mechanism"
+name = "How Wikipedia Deploy Openstack Swift"
 category = "Openstack"
-tags = "openstack","Swift","object storage","python","key value store","swift middleware"
+tags = "openstack","Swift","object storage","wikipedia","production deployment","use cases"
 
 # end
 

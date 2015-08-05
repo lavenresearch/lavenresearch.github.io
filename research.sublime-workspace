@@ -536,12 +536,13 @@
 	},
 	"file_history":
 	[
+		"/D/Dropbox/bb/research/03.ThirdPaper/figures/Ganglia   Swift eqiad Cluster Report.html",
+		"/D/project/github/lavenresearch.github.io/_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md",
 		"/D/project/github/lavenresearch.github.io/_posts/2015-07-30-Openstack-Swift-Middleware-Mechanism.md",
 		"/D/project/github/lavenresearch.github.io/_posts/gen_blank_post.py",
 		"/D/project/github/lavenresearch.github.io/_posts/2015-07-19-An-Overview-for-Storage-System-part1-(Mapping).md",
 		"/D/project/github/lavenresearch.github.io/_posts/2015-07-19-An-Overview-for-Storage-System.md",
 		"/D/project/706项目/测试结果/20150401/pnfsThroughput.py",
-		"/D/project/github/lavenresearch.github.io/_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md",
 		"/D/project/github/lavenresearch.github.io/_layouts/hdefault.html",
 		"/D/project/github/lavenresearch.github.io/_posts/2015-07-06-Install-Openstack-Swift-on-Ubuntu-14.04.md",
 		"/D/project/github/lavenresearch.github.io/_includes/sidebar.html",
@@ -662,8 +663,7 @@
 		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/Default (Windows).sublime-keymap",
 		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/README.markdown",
 		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/Print to HTML.sublime-settings",
-		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/Pylinter/README.rst",
-		"/D/books/life/text/iriver_cover_story/english_novels/a_song_of_ice_and_fire/George R. R. Martin - [A SONG OF ICE AND FIRE 01] - A Game Of Thrones (v5.0).epub"
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/Pylinter/README.rst"
 	],
 	"find":
 	{
@@ -903,6 +903,10 @@
 		"selected_items":
 		[
 			[
+				"bas",
+				"_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md"
+			],
+			[
 				"over",
 				"_posts/2015-07-19-An-Overview-for-Storage-System.md"
 			],
@@ -945,10 +949,6 @@
 			[
 				"_conf",
 				"_config.yml"
-			],
-			[
-				"bas",
-				"_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md"
 			],
 			[
 				"con",
