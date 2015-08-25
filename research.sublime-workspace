@@ -536,13 +536,18 @@
 	},
 	"file_history":
 	[
+		"/E/pf/WizNote/My Knowledge/temp/912839/第二次经费管理.md-912839.md",
+		"/C/Users/lav/Desktop/007.beijing0811/经费.md",
+		"/C/Users/lav/Desktop/a/a.py",
+		"/D/project/github/lavenresearch.github.io/_posts/2015-08-05-An-Overview-For-Storage-System-Part2(Adaption-to-Hardware).md",
+		"/D/project/github/lavenresearch.github.io/_posts/2015-08-05-An-Overview-For-Storage-System-Part3(Key-Value-Store).md",
+		"/D/project/github/lavenresearch.github.io/_posts/2015-07-19-An-Overview-for-Storage-System-part1-(Mapping).md",
+		"/D/project/github/lavenresearch.github.io/_posts/gen_blank_post.py",
 		"/E/pf/WizNote/My Knowledge/temp/3376236/Openstack Swift 的认证方式.md-3376236.md",
 		"/D/project/github/lavenresearch.github.io/_posts/2015-07-30-Openstack-Swift-Middleware-Mechanism.md",
 		"/D/project/github/lavenresearch.github.io/_posts/2015-08-05-How-Wikipedia-Deploy-Openstack-Swift.md",
-		"/D/project/github/lavenresearch.github.io/_posts/gen_blank_post.py",
 		"/D/Dropbox/bb/research/03.ThirdPaper/figures/Ganglia   Swift eqiad Cluster Report.html",
 		"/D/project/github/lavenresearch.github.io/_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md",
-		"/D/project/github/lavenresearch.github.io/_posts/2015-07-19-An-Overview-for-Storage-System-part1-(Mapping).md",
 		"/D/project/github/lavenresearch.github.io/_posts/2015-07-19-An-Overview-for-Storage-System.md",
 		"/D/project/706项目/测试结果/20150401/pnfsThroughput.py",
 		"/D/project/github/lavenresearch.github.io/_layouts/hdefault.html",
@@ -658,12 +663,7 @@
 		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
 		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/completions.py",
 		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/sublimerepl.py",
-		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/run_existing_command.py",
-		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SFTP/Default (Windows).sublime-keymap",
-		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SideBarEnhancements/Default (Windows).sublime-keymap",
-		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/SublimeREPL.sublime-settings",
-		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/Default (Windows).sublime-keymap",
-		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/LaTeXTools/README.markdown"
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/run_existing_command.py"
 	],
 	"find":
 	{
@@ -682,6 +682,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"－",
+			"＋",
+			"Openstack",
+			"GFS",
+			"system",
 			"\\",
 			"f5",
 			"Ceph",
@@ -804,12 +809,7 @@
 			"laven",
 			"LAVEN",
 			"laven",
-			"LAVEN",
-			"serif",
-			"stylesheets",
-			"./stylesheet",
-			"stylesheet",
-			"./css"
+			"LAVEN"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1196,7 +1196,7 @@
 		[
 			[
 				"",
-				"/D/Dropbox/bb/research/03.ThirdPaper/thirdPaper.sublime-project"
+				"/D/project/github/lavenresearch.github.io/research.sublime-project"
 			],
 			[
 				"p",
