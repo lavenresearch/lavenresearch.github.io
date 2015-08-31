@@ -232,3 +232,9 @@ def filter_factory(global_conf, **local_conf):
         return mystandalonemw(app, conf)
     return mystandalonemw_filter
 ~~~
+
+# 补充说明
+
+## 2015/8/31 19:53:37
+
+最初将 openstack swift middleware 的代码划分为多个 python 文件，但是，proxy-server 无法启动，提示信息是除了主文件外的其他 python 文件找不到，于是，将其他文件中的代码放入主文件才可以运行。主文件为在 setup.py 中指定的 entry_point。
