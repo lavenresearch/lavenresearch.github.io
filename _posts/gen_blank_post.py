@@ -3,9 +3,9 @@ import time
 
 # basic information start
 
-name = "Multiprocessing in Python"
-category = "python"
-tags = "python", "programming", "multiprocessing"
+name = "The Logging System for Openstack Swift (linux syslog)"
+category = "linux"
+tags = "linux", "swift", "openstack", "syslog", "rsyslog"
 
 # end
 

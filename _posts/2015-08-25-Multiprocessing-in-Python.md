@@ -58,7 +58,7 @@ os 包中有一个 fork 方法可以用于创建进程，这里的 fork 方法�
 
 使用 subprocess 可以创建 daemon 进程，但是，存在上述需要传递数据的弱点。
 
-创建 Daemon 进程还可以直接使用 os.fork() [一个例子](http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/)。 不过使得 daemon 进程比较具有可用性还不是很容易。[PEP-3143](https://www.python.org/dev/peps/pep-3143/)
+创建 Daemon 进程还可以直接使用 os.fork() ， [一个例子](http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/)。 不过使得 daemon 进程比较具有可用性还不是很容易。[PEP-3143](https://www.python.org/dev/peps/pep-3143/)
 
-还有其他各种各样的包实现了创建 daemon 进程的功能，其中用的比较多的一个是 [python-daemon](https://pypi.python.org/pypi/python-daemon/)
+还有其他各种各样的包实现了创建 daemon 进程的功能，其中用的比较多的一个是 [python-daemon](https://pypi.python.org/pypi/python-daemon/) 。
 

@@ -163,7 +163,7 @@
 			"file": "_posts/2015-08-25-Multiprocessing-in-Python.md",
 			"settings":
 			{
-				"buffer_size": 809,
+				"buffer_size": 3150,
 				"line_ending": "Windows"
 			}
 		}
@@ -552,6 +552,8 @@
 	},
 	"file_history":
 	[
+		"/D/project/github/lavenresearch.github.io/_posts/2015-08-25-Multiprocessing-in-Python.md",
+		"/D/project/github/lavenresearch.github.io/_posts/2015-07-30-Openstack-Swift-Middleware-Mechanism.md",
 		"/D/Dropbox/bb/research/03.ThirdPaper/stageReports/dataMigrationOverheadReport/figures/broadcastingoverheadKey.py",
 		"/E/pf/WizNote/My Knowledge/temp/912839/第二次经费管理.md-912839.md",
 		"/C/Users/lav/Desktop/007.beijing0811/经费.md",
@@ -561,7 +563,6 @@
 		"/D/project/github/lavenresearch.github.io/_posts/2015-07-19-An-Overview-for-Storage-System-part1-(Mapping).md",
 		"/D/project/github/lavenresearch.github.io/_posts/gen_blank_post.py",
 		"/E/pf/WizNote/My Knowledge/temp/3376236/Openstack Swift 的认证方式.md-3376236.md",
-		"/D/project/github/lavenresearch.github.io/_posts/2015-07-30-Openstack-Swift-Middleware-Mechanism.md",
 		"/D/project/github/lavenresearch.github.io/_posts/2015-08-05-How-Wikipedia-Deploy-Openstack-Swift.md",
 		"/D/Dropbox/bb/research/03.ThirdPaper/figures/Ganglia   Swift eqiad Cluster Report.html",
 		"/D/project/github/lavenresearch.github.io/_posts/2014-01-13-BASIC-CONCEPTS-FOR-RESEARCHING.md",
@@ -678,8 +679,7 @@
 		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/User/SublimeREPL.sublime-settings",
 		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/repls/sublimepython_repl.py",
 		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/completions.py",
-		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/sublimerepl.py"
+		"/C/Users/lav/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/completions.py"
 	],
 	"find":
 	{
@@ -1125,15 +1125,15 @@
 					"file": "_posts/2015-08-25-Multiprocessing-in-Python.md",
 					"settings":
 					{
-						"buffer_size": 809,
+						"buffer_size": 3150,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								131,
-								131
+								2876,
+								2876
 							]
 						],
 						"settings":
@@ -1274,7 +1274,7 @@
 							"syntax": "Packages/sublime-markdown-extended/Syntaxes/Markdown Extended.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 124.0,
+						"translation.y": 827.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1343,6 +1343,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"multi",
+				"_posts/2015-08-25-Multiprocessing-in-Python.md"
+			],
 			[
 				"midd",
 				"_posts/2015-07-30-Openstack-Swift-Middleware-Mechanism.md"
@@ -1677,7 +1681,7 @@
 	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 242.0,
 	"status_bar_visible": true
 }
