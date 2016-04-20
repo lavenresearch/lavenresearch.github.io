@@ -3,9 +3,9 @@ import time
 
 # basic information start
 
-name = "The Logging System for Openstack Swift (linux syslog)"
-category = "linux"
-tags = "linux", "swift", "openstack", "syslog", "rsyslog"
+name = "Openstack Swift with Eventlet"
+category = "openstack"
+tags = "linux", "swift", "openstack", "epoll"
 
 # end
 
