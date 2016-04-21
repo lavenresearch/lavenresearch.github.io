@@ -185,27 +185,94 @@ def add(self, evtype, fileno, cb, tb, mark_as_closed):
     The *cb* argument is the callback which will be called when the file is ready for reading/writing.
     """
 def remove(self, listener):
-def switch(self):
-def wait(self, seconds=None):
-def run(self, *a, **kw):
+def switch(self): # 跳回到 hub 所在的 greenlet， 这个 greenlet 在 hub 初始化的时候被指定为运行 hub.run(), 所以每次切回 hub 都会跳到 run 里面
+def wait(self, seconds=None): # 收集来自操作系统的 events，读/写数据，以及后续操作
+def run(self, *a, **kw): # hub 的主循环，hub 的 greenlet 就一直在执行这段代码，跳出去，回来，再跳出去，再回来，如此反复
     """Run the runloop until abort is called.
     """
 def abort(self, wait=False):
 def schedule_call_local(self, seconds, cb, *args, **kw):
-def schedule_call_global(self, seconds, cb, *args, **kw):
+def schedule_call_global(self, seconds, cb, *args, **kw): # 像 hub 中添加新的 greenlet 的入口，cb 就是会被 hub 执行的函数
+def fire_timers(self, when): # 执行 hub 里 self.timers 中所有的 timer ，即，当前到了指定调用时间的所有 callback，一直到 callback 执行到需要 IO 的部分
+def prepare_timers(self): # 将到点要被调用的 timers 全部放到 self.timers 里等待被执行。(从 self.next_timer 迁移 timer 到 self.timers 里)
 ```
 
 BaseHub 维护了一堆 listeners（listener 是一个类的实例，里面主要记录了这些信息 `evtype, fileno, cb, tb, mark_as_closed`） 的列表(READ, WRITE 各有一个 listener 的列表)。
 
-poll hub 主要改了 add, remove 方法，增加了 wait 方法。
+poll hub 主要改了 add, remove 方法，实现了 wait 方法。
 
 - add/remove 方法通知操作系统（增加/取消）监控给定文件句柄，即上一部分中 poller.register 和 poller.unregister
 - wait 方法会收集来自操作系统的 events，根据 events 中的文件句柄，使用 BaseHub 中的 listeners 将相应的 listener 们找出来，然后，依次调用 listener 里的 cb，即当时 add 的时候指定的 callback 函数，这个函数里应该规定了，当 event 发生时要干什么。
 
+在程序里使用 hub 实现异步的流程：
 
-## Eventlet pool 以及 wsgi
+- 应该是线程建立的时候就会自动创建 hub 的 greenlet， 我不确定
+- 程序继续执行到 IO 处： `client_socket = sock.accept()`
+    - eventlet 改了 socket 包，因此 accept 会自动调用 `hub.add()` 让操作系统监听对应于 sock 的 events
+    - __在 socket IO 处会自动（即，不需要再程序里显式调用 switch） switch 到 `hub.run` 里__，在程序的最开始阶段没有其他的 greenlet，因此会停下来等来自 sock 的 events
+    - 等到了 sock 相关的 events 之后，从 `hub.run()` 中 switch 到 sock 所在的 greenlet 继续执行。
+    - 假设如果获得了新的 client_socket，下面应该就要把这个新的 socket 加入到 hub 的管理中去
+- 获得 hub： `hub = hubs.get_hub()`
+    - eventlet 改了 python 的 threading 模块，`hubs.get_hub()` 就是从 threading 中包含一个状态记录了当前 thread 的 hub
+    - `threading = patcher.original('threading')`
+    - `_threadlocal = threading.local()`
+    - `hub = _threadlocal.hub`
+- 为新获得的 client_socket 创建 greenlet： `g = greenthread.spawn_n(self._spawn_n_impl,function, args, kwargs, True)`
+    - 这里的 function 即，从上面传下来的，要在 greenlet 里运行的函数
+    - `greenthread.spawn_n` 创建的是 greenlet, `greenthread.spawn` 创建的是 GreenThread. 两个都可以。 这两者的区别在于，GreenThread 会将一个 greenlet 的返回和异常信息记录下来，而从 greenlet 本身是无法获取这些信息的。
+- 将一个 greenlet 加入 hub 的管理： `hub.schedule_call_global(seconds, g.switch, *args, **kwargs)`
+    - 这里 `g.switch` 中的 `g` 可以是一个 greenlet，也可以是一个 GreenThread.
+    - 这里会形成一个 timer，加入到 hub 里， `hub.add_timer(timer)`
+    - timer 里面包含要调用的函数， 以及规划的调用时间，以及一些状态。
+- 继续运行，又到了 IO 处： `client_socket = sock.accept()`
+    - 跳去执行 `hub.run()`， 和第一次不同的是，现在 hub 里的 `self.next_timers` 不为空了
+    - 调用 `self.prepare_timers` 把 `self.next_timers` 里到了调度时间的 timer 转到 `self.timers` 里
+    - 调用 `self.fire_timers` 依次将 `self.timers` 里的 timer 中的函数（g.switch）都调一遍， 即切到对应的 greenlet 里
+        - timer 里的 greenlet 运行到 IO 处， switch 回到 `hub.run` 里继续调用剩下 timers 里的函数
+    - 调用 `self.prepare_timers` 把 `self.next_timers` 里到了调度时间的 timer 转到 `self.timers` 里（）
+    - 调用 `hub.wait` 开始等待 events。现在已经有两个 greenlet 在等待 IO 了。
+        - 本质上是调用 `select.poll.poll`
+    - 接收到 events, 依次调用 events 对应的 callback 函数（通过 event 找到 listener，调用 listener 里的 cb）
+        - `client_socket` 相关的 event： switch 到 `client_socket` 对应的 greenlet 里，开始读写处理数据。执行结束后，switch 回 `hub.run` 继续循环
+        - `sock` 相关的 event： switch 到 `sock` 对应的 greenlet 里，接收新的 `client_socket`。执行结束后，重复上述过程，再次遇到 IO 后 switch 回 `hub.run`
+
+这里面最让人晕的地方是： 一个 greenlet 到了 IO 处，或者一个 greenlet 运行完了，都会自动 switch 到 `hub.run()` 的 greenlet 里去，都不需要显式调用 switch. 这归功于 eventlet 可以给 python 自带的 modules 打 patch 把他们都改了。
+
+以上内容来自于 eventlet 源码。
+
+
+## Eventlet 里的 greenpool 以及 wsgi
+
+GreenPool 就是把 hub 及相关的 greenlet, GreenThread 封装在一起了。
+
+使用 GreenPool 的例子：
+
+```python
+from eventlet import greenpool
+
+def function(arg):
+    pass
+
+# 创建一个 pool
+max_size = 2000
+pool = greenpool.GreenPool(max_size)
+sock = some listening socket
+while True:
+    new_socket = sock.accept()
+    # 以下包括的工作内容有：get_hub, create greenlet, call schedule_call_global
+    pool.spawn_n(function, new_socket)
+    # spawn create GreenThread instead of greenlet
+```
+
+使用 `eventlet.wsgi` 最基本的只需要如下两点：
+
+1. 创建好一个处于 listen 状态的 socket
+2. 准备好 application 的入口函数： `some_funciton_name(env, start_response)`
+
+然后执行： `wsgi.server( socket, some_funciton_name, .... )`。  wsgi 执行的过程和上面这个 GreenPool 的例子是一样的， 在他的那个 function 里有一些处理操作，并且调用传给它的 some_funciton_name 函数。
+
+PS: 这里有一个网络小知识， 一个 socket 可以让多个进程都监听着。这种情况在曾经会导致惊群问题，不过在好久以前的内核里就已经修复了。
 
 # Openstack Swift 中的 Eventlet
 
-
-
+建立 socket 之后，会 fork N 个子进程，然后再每个子进程中调用 `eventlet.wsgi.server(sock, app)`， 其中 app 由 `paste.deploy.loadapp` 生成。
