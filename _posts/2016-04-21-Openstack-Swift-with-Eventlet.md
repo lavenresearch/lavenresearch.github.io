@@ -2,7 +2,7 @@
 layout: hpost
 category : openstack
 tagline: ""
-tags : [linux,swift,openstack,epoll]
+tags : [linux, swift, openstack, epoll]
 ---
 {% include JB/setup %}
 
@@ -12,11 +12,11 @@ tags : [linux,swift,openstack,epoll]
 
 参考资料：
 
-[openstack分析 - eventlet](http://blog.csdn.net/fengkun32/article/details/42293949)
+[openstack分析 eventlet](http://blog.csdn.net/fengkun32/article/details/42293949)
 
 ### greenlet 实现了什么？
 
-(greenlet docs)[https://greenlet.readthedocs.org/en/latest/]
+[greenlet docs](https://greenlet.readthedocs.org/en/latest/)
 
 在程序执行的时候，通过 greenlet 就可以方便的在一个程序的各个部分之间跳来跳去。
 
@@ -136,7 +136,7 @@ while True:
 
 ### Eventlet hub
 
-(python eventlet并发原理分析)[https://github.com/stanzgy/wiki/blob/master/openstack/inside-eventlet-concurrency.md]
+[python eventlet并发原理分析](https://github.com/stanzgy/wiki/blob/master/openstack/inside-eventlet-concurrency.md)
 
 Eventlet hub 把上面两件事集成在一起了。 eventlet 的结构如下：
 
